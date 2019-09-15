@@ -1,0 +1,73 @@
+Metadata:
+	Title: Dark Colony
+	Version: playtest-20190825
+
+Packages:
+	.
+	$dc: dc
+	./mods/common: common
+	dc|bits
+
+MapFolders:
+	dc|maps: System
+
+Rules:
+	dc|rules.yaml
+
+TileSets:
+	dc|tileset.yaml
+
+Cursors:
+	dc|cursor.yaml
+
+Chrome:
+	dc|chrome.yaml
+
+Assemblies:
+	common|OpenRA.Mods.Common.dll
+	dc|OpenRA.Mods.DC.dll
+
+ChromeLayout:
+	dc|mainmenu.yaml
+
+Notifications:
+
+Translations:
+	dc|english.yaml
+
+Hotkeys:
+	common|hotkeys/game.yaml
+
+LoadScreen: BlankLoadScreen
+
+ServerTraits:
+	LobbyCommands
+	PlayerPinger
+	MasterServerPinger
+	LobbySettingsNotification
+
+ChromeMetrics:
+	common|metrics.yaml
+	dc|metrics.yaml
+
+Fonts:
+	Bold:
+		Font: common|FreeSansBold.ttf
+		Size: 14
+		Ascender: 11
+
+MapGrid:
+	TileSize: 32, 32
+	Type: Rectangular
+
+SpriteFormats: ShpTS
+
+SpriteSequenceFormat: DefaultSpriteSequence
+
+ModelSequenceFormat: PlaceholderModelSequence
+
+GameSpeeds:
+	default:
+		Name: Normal
+		Timestep: 40
+		OrderLatency: 3
