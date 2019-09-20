@@ -25,7 +25,7 @@ Chrome:
 
 Assemblies:
 	common|OpenRA.Mods.Common.dll
-	dc|OpenRA.Mods.DC.dll
+	dc|OpenRA.Mods.DarkColony.dll
 
 ChromeLayout:
 	dc|mainmenu.yaml
