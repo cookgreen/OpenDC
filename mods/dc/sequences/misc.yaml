@@ -1,0 +1,26 @@
+editor-overlay:
+	Defaults: trans.icn
+		AddExtension: False
+	copy:
+	paste:
+		Start: 2
+
+resources:
+	Defaults:
+		Length: *
+		UseTilesetExtension: true
+		TilesetOverrides:
+			INTERIOR: TEMPERAT
+			DESERT: TEMPERAT
+	gold01: gold01
+	gold02: gold02
+	gold03: gold03
+	gold04: gold04
+	gem01: gem01
+	gem02: gem02
+	gem03: gem03
+	gem04: gem04
+
+shroud:
+	shroud: shadow
+		Length: *

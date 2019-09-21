@@ -1,6 +1,20 @@
 Container@MAINMENU:
 	Logic: TemplateMenuLogic
 	Children:
+		Button@SINGLEPLAYER_BUTTON:
+			X: (WINDOW_RIGHT - WIDTH) / 2
+			Y: (WINDOW_BOTTOM - HEIGHT) / 2
+			Width: 140
+			Height: 30
+			Text: Singleplayer
+			Font: Bold
+		Button@MULTIPLAYER_BUTTON:
+			X: (WINDOW_RIGHT - WIDTH) / 2
+			Y: (WINDOW_BOTTOM - HEIGHT) / 2
+			Width: 140
+			Height: 30
+			Text: Multiplayer
+			Font: Bold
 		Button@QUIT_BUTTON:
 			X: (WINDOW_RIGHT - WIDTH) / 2
 			Y: (WINDOW_BOTTOM - HEIGHT) / 2
@@ -8,3 +22,40 @@ Container@MAINMENU:
 			Height: 30
 			Text: Quit
 			Font: Bold
+
+Background@TWOBUTTON_PROMPT:
+	X: (WINDOW_RIGHT - WIDTH) / 2
+	Y: (WINDOW_BOTTOM - 90) / 2
+	Width: 370
+	Height: 110
+	Children:
+		Label@PROMPT_TITLE:
+			Width: PARENT_RIGHT
+			Y: 21
+			Height: 25
+			Font: Bold
+			Align: Center
+		Label@PROMPT_TEXT:
+			X: 15
+			Y: 51
+			Width: PARENT_RIGHT - 30
+			Height: 20
+			Align: Center
+		Button@CONFIRM_BUTTON:
+			X: 20
+			Y: PARENT_BOTTOM - 45
+			Width: 160
+			Height: 25
+			Text: Confirm
+			Font: Bold
+			Key: return
+			Visible: false
+		Button@CANCEL_BUTTON:
+			X: PARENT_RIGHT - 180
+			Y: PARENT_BOTTOM - 45
+			Width: 160
+			Height: 25
+			Text: Cancel
+			Font: Bold
+			Key: escape
+			Visible: false

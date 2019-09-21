@@ -2,21 +2,57 @@ Metadata:
 	Title: Dark Colony
 	Version: playtest-20190825
 
+PackageFormats: Mix
+
 Packages:
+	~^Content/ra/v2/
+	~^Content/ra/v2/expand
+	~^Content/ra/v2/cnc
+	~^Content/ra/v2/movies
+	~^Content/dc/sounds/
+	~^Content/dc/sprites/
+	~^Content/dc/tilesets/
 	.
 	$dc: dc
+	./mods/ra: ra
 	./mods/common: common
+	~main.mix
+	~conquer.mix
+	~lores.mix: lores
+	~hires.mix
+	~local.mix
+	~sounds.mix
+	~speech.mix
+	~allies.mix
+	~russian.mix
+	~temperat.mix
+	~snow.mix
+	~interior.mix
+	~scores.mix
+	~expand2.mix
+	~hires1.mix
+	~desert.mix
+	ra|bits
+	ra|bits/desert
 	dc|bits
 
 MapFolders:
 	dc|maps: System
 
 Rules:
-	dc|rules.yaml
+	dc|rules/defaults.yaml
+	dc|rules/palettes.yaml
+	dc|rules/player.yaml
+	dc|rules/world.yaml
+    
+Sequences:
+	dc|sequences/misc.yaml
 
 TileSets:
-	dc|tileset.yaml
-
+	dc|tilesets/snow.yaml
+	dc|tilesets/interior.yaml
+	dc|tilesets/temperat.yaml
+	dc|tilesets/desert.yaml
 Cursors:
 	dc|cursor.yaml
 
@@ -25,12 +61,56 @@ Chrome:
 
 Assemblies:
 	common|OpenRA.Mods.Common.dll
+	common|OpenRA.Mods.Cnc.dll
 	dc|OpenRA.Mods.DarkColony.dll
 
 ChromeLayout:
-	dc|mainmenu.yaml
+	common|chrome/ingame.yaml
+	common|chrome/ingame-chat.yaml
+	common|chrome/ingame-fmvplayer.yaml
+	common|chrome/ingame-info.yaml
+	common|chrome/ingame-infoscripterror.yaml
+	common|chrome/ingame-infobriefing.yaml
+	common|chrome/ingame-infoobjectives.yaml
+	common|chrome/ingame-infostats.yaml
+	common|chrome/ingame-menu.yaml
+	dc|chrome/ingame-observer.yaml
+	dc|chrome/ingame-player.yaml
+	common|chrome/ingame-perf.yaml
+	common|chrome/ingame-debug.yaml
+	common|chrome/ingame-debuginfo.yaml
+	common|chrome/ingame-infochat.yaml
+	common|chrome/mainmenu.yaml
+	common|chrome/settings.yaml
+	common|chrome/credits.yaml
+	common|chrome/lobby.yaml
+	common|chrome/lobby-mappreview.yaml
+	common|chrome/lobby-players.yaml
+	common|chrome/lobby-options.yaml
+	common|chrome/lobby-music.yaml
+	common|chrome/lobby-servers.yaml
+	common|chrome/lobby-kickdialogs.yaml
+	common|chrome/color-picker.yaml
+	common|chrome/map-chooser.yaml
+	common|chrome/multiplayer-browser.yaml
+	common|chrome/multiplayer-browserpanels.yaml
+	common|chrome/multiplayer-createserver.yaml
+	common|chrome/multiplayer-directconnect.yaml
+	common|chrome/connection.yaml
+	common|chrome/replaybrowser.yaml
+	common|chrome/gamesave-browser.yaml
+	dc|chrome/gamesave-loading.yaml
+	common|chrome/dropdowns.yaml
+	common|chrome/musicplayer.yaml
+	common|chrome/tooltips.yaml
+	dc|chrome/assetbrowser.yaml
+	common|chrome/missionbrowser.yaml
+	common|chrome/confirmation-dialogs.yaml
+	common|chrome/editor.yaml
+	common|chrome/playerprofile.yaml
 
 Notifications:
+	dc|audio/notifications.yaml
 
 Translations:
 	dc|english.yaml
@@ -51,20 +131,51 @@ ChromeMetrics:
 	dc|metrics.yaml
 
 Fonts:
+	Tiny:
+		Font: common|FreeSans.ttf
+		Size: 10
+		Ascender: 8
+	TinyBold:
+		Font: common|FreeSansBold.ttf
+		Size: 10
+		Ascender: 8
+	Small:
+		Font: common|FreeSans.ttf
+		Size: 12
+		Ascender: 9
+	Regular:
+		Font: common|FreeSans.ttf
+		Size: 14
+		Ascender: 11
 	Bold:
 		Font: common|FreeSansBold.ttf
 		Size: 14
 		Ascender: 11
+	MediumBold:
+		Font: common|FreeSansBold.ttf
+		Size: 18
+		Ascender: 14
+	BigBold:
+		Font: common|FreeSansBold.ttf
+		Size: 24
+		Ascender: 18
 
 MapGrid:
-	TileSize: 32, 32
+	TileSize: 24, 24
 	Type: Rectangular
 
-SpriteFormats: ShpTS
+SpriteFormats: ShpD2, ShpTD, TmpRA, TmpTD, ShpTS, PngSheet, SPR, BTS
 
-SpriteSequenceFormat: DefaultSpriteSequence
+SpriteSequenceFormat: TilesetSpecificSpriteSequence
+	TilesetExtensions:
+		TEMPERAT: .tem
+		SNOW: .sno
+		INTERIOR: .int
+		DESERT: .des
 
 ModelSequenceFormat: PlaceholderModelSequence
+
+SoundFormats: Aud, Wav
 
 GameSpeeds:
 	default:
