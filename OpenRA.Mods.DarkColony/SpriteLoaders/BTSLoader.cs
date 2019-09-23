@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenRA.Graphics;
+using OpenRA.Mods.Common.Graphics;
 using OpenRA.Primitives;
 
 namespace OpenRA.Mods.DarkColony.SpriteLoaders
@@ -46,23 +47,24 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 		}
 
 		public bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
-		{
-			metadata = null;
-			using (BinaryReader reader = new BinaryReader(s))
+        {
+            uint[] palette = new uint[256 * 3];
+            using (BinaryReader reader = new BinaryReader(s))
 			{
 				int unknown = reader.ReadInt32();
 				TilesNum = reader.ReadInt32();
 
-				byte[] palette = new byte[256 * 3];
 				for (int i = 0; i < palette.Length; i++)
 				{
 					palette[i] = reader.ReadByte();
 				}
 
 				frames = ParseFrames(reader);
-			}
+            }
 
-			return true;
+            metadata = new TypeDictionary { new EmbeddedSpritePalette(palette) };
+
+            return true;
 		}
 	}
 }
