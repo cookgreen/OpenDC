@@ -24,6 +24,14 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 			public byte[] Data { get; set; }
 
 			public bool DisableExportPadding { get; set; }
+
+			public SpriteFrameType Type
+			{
+				get
+				{
+					return SpriteFrameType.BGRA;
+				}
+			}
 		}
 
 		ISpriteFrame[] ParseFrames(BinaryReader reader)
