@@ -14,7 +14,6 @@ Packages:
 	~^Content/dc/tilesets/
 	.
 	$dc: dc
-	./mods/ra: ra
 	./mods/common: common
 	~main.mix
 	~conquer.mix
@@ -32,8 +31,8 @@ Packages:
 	~expand2.mix
 	~hires1.mix
 	~desert.mix
-	ra|bits
-	ra|bits/desert
+	dc|bits
+	dc|bits/desert
 	dc|bits
 
 MapFolders:
