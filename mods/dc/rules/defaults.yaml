@@ -374,7 +374,7 @@
 		ReferencePoint: Center
 		Palette: mouse
 	ActorPreviewPlaceBuildingPreview:
-    
+	
 DummyActor:
 	BodyOrientation:
 	HitShape:
