@@ -1,3 +1,7 @@
+mpspawn:
+	idle:
+		Length: *
+
 editor-overlay:
 	Defaults: trans.icn
 		AddExtension: False
