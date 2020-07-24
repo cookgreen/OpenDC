@@ -59,3 +59,9 @@
 		Fog: true
 	PlayerHighlightPalette:
 	MenuPaletteEffect:
+	PaletteFromDCAsset@acar.spr:
+		Name: acar.spr
+		Filename: acar.spr
+	PaletteFromDCAsset@atlantis.bts:
+		Name: atlantis.bts
+		Filename: atlantis.bts

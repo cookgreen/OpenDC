@@ -1,6 +1,5 @@
 ﻿using System.IO;
 using OpenRA.Graphics;
-using OpenRA.Mods.Common.Graphics;
 using OpenRA.Primitives;
 
 namespace OpenRA.Mods.DarkColony.SpriteLoaders
@@ -45,34 +44,23 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 
 		public bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
-			var name = ((FileStream)s).Name;
+			metadata = new TypeDictionary();
 
-			if (Path.GetExtension(name) != ".BTS")
+			if (Path.GetExtension(((FileStream)s).Name) != ".BTS")
 			{
 				frames = null;
-				metadata = new TypeDictionary();
 				return false;
 			}
-
-			var palette = new uint[256];
 
 			using (var reader = new BinaryReader(s))
 			{
 				var unkSize = reader.ReadUInt32(); // TODO could be filesize related
 				var numFrames = reader.ReadInt32();
 
-				for (var i = 0; i < palette.Length; i++)
-				{
-					var r = reader.ReadByte();
-					var g = reader.ReadByte();
-					var b = reader.ReadByte();
-					palette[i] = (uint)((r << 24) | (g << 16) | (b << 8) | (i == 0 ? 0x00 : 0xff));
-				}
+				reader.BaseStream.Position += 256 * 3; // We skip the palette here...
 
 				frames = ParseFrames(reader, numFrames);
-			}
-
-			metadata = new TypeDictionary { new EmbeddedSpritePalette(palette) };
+            }
 
 			return true;
 		}
