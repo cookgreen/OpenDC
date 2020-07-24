@@ -11,7 +11,7 @@ Congratulations, and Good Luck!
 ~3COURSE:    ~7WAYPOINTS 506G
 ~3TRAINER:   ~7CMDR.B.DOBBS
 ~3COURSE DESCRIPTION:
-~7This course will teach you the WAYPOINT SYSTEM for guiding your troops.
+~7This course will teach you the WAY-POINT SYSTEM for guiding your troops.
 
 ~1HERE ARE YOUR ORDERS...
 
