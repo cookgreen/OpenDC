@@ -48,7 +48,7 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 				ushort unknown2 = reader.ReadUInt16();
 				frame.FrameSize = new Size(width, height);
 				frame.Size = new Size(width, height);
-				frame.Data = new byte[width * height];
+				frame.Data = new byte[width * height * 4];
 				frames.Add(frame);
 			}
 
@@ -65,13 +65,34 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 
 		public bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
+			string name = (s as FileStream).Name;
+			if (Path.GetExtension(name) != ".SPR")
+			{
+				frames = null;
+				metadata = new TypeDictionary();
+				return false;
+			}
+
 			uint[] palette = new uint[256 * 3];
 
 			using (BinaryReader reader = new BinaryReader(s))
 			{
-				ushort unknown1 = reader.ReadUInt16();
+				ushort compressedSize = reader.ReadUInt16();
 				FrameNum = reader.ReadUInt16();
 				ushort unknown2 = reader.ReadUInt16();
+
+				for (int i = 0; i < compressedSize;)
+				{
+					byte compression = reader.ReadByte();
+					if (compression < 128)
+					{
+						// copy i bytes
+					}
+					else
+					{
+						i += 256 - compression;
+					}
+				}
 
 				for (int i = 0; i < palette.Length; i++)
 				{

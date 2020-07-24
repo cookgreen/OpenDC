@@ -19,6 +19,12 @@
 		Tileset: DESERT
 		Filename: desert.pal
 		ShadowIndex: 3, 4
+	PaletteFromFile:
+		Name: terrain
+		Tileset: TEMPLATE
+		Filename: template.pal
+		CursorPalette: true
+		ShadowIndex:
 	PaletteFromFile@player:
 		Name: player
 		Filename: temperat.pal

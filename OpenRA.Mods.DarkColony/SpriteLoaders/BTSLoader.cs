@@ -55,9 +55,17 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 		}
 
 		public bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
-        {
-            uint[] palette = new uint[256 * 3];
-            using (BinaryReader reader = new BinaryReader(s))
+		{
+			string name = (s as FileStream).Name;
+			if (Path.GetExtension(name) != ".BTS")
+			{
+				frames = null;
+				metadata = new TypeDictionary();
+				return false;
+			}
+
+			uint[] palette = new uint[256 * 3];
+			using (BinaryReader reader = new BinaryReader(s))
 			{
 				int unknown = reader.ReadInt32();
 				TilesNum = reader.ReadInt32();
@@ -70,9 +78,9 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 				frames = ParseFrames(reader);
             }
 
-            metadata = new TypeDictionary { new EmbeddedSpritePalette(palette) };
+			metadata = new TypeDictionary { new EmbeddedSpritePalette(palette) };
 
-            return true;
+			return true;
 		}
 	}
 }
