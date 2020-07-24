@@ -209,7 +209,6 @@
 		HealIfBelow: 100
 		DamageCooldown: 125
 		RequiresCondition: rank-veteran && !rank-elite
-		Modifier: 90
 	InaccuracyMultiplier@ELITE:
 		RequiresCondition: rank-elite
 		Modifier: 50
@@ -336,9 +335,7 @@
 		DestroyedSounds: bgendiea.wav, bgendieb.wav, bgendiec.wav, bgendied.wav, bgendiee.wav, bgendief.wav
 	WithSpriteBody:
 	RepairableBuilding:
-		IndicatorPalette: mouse
 	EngineerRepairable:
-		Voice: Attack
 	SpawnActorsOnSell@allies:
 		ActorTypes: e1, e1, e1
 		Factions: america, germany, england, france, korea

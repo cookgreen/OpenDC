@@ -105,6 +105,34 @@
 			Ore: 50
 			Gems: 50
 			Water: 100
+	Faction@1:
+		Name: England
+		InternalName: england
+		Side: Allies
+		Description: England: Counterintelligence\nSpecial Unit: British Spy\nSpecial Unit: Mobile Gap Generator
+	Faction@2:
+		Name: Russia
+		InternalName: russia
+		Side: Soviet
+		Description: Russia: Tesla Weapons\nSpecial Unit: Tesla Tank\nSpecial Unit: Shock Trooper
+	Faction@random:
+		Name: Any
+		InternalName: Random
+		RandomFactionMembers: RandomAllies, RandomSoviet
+		Side: Random
+		Description: Random Country\nA random country will be chosen when the game starts.
+	Faction@randomallies:
+		Name: Allies
+		InternalName: RandomAllies
+		RandomFactionMembers: england
+		Side: Random
+		Description: Random Allied Country\nA random Allied country will be chosen when the game starts.
+	Faction@randomsoviet:
+		Name: Soviet
+		InternalName: RandomSoviet
+		RandomFactionMembers: russia
+		Side: Random
+		Description: Random Soviet Country\nA random Soviet country will be chosen when the game starts.
 	TerrainRenderer:
 	ResourceType@ore:
 		Type: Ore

@@ -10,6 +10,7 @@ Player:
 	TechTree:
 	ClassicProductionQueue@Building:
 		Type: Building
+		DisplayOrder: 0
 		LowPowerModifier: 300
 		ReadyAudio: ConstructionComplete
 		BlockedAudio: NoBuild
@@ -18,8 +19,9 @@ Player:
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
 		SpeedUp: True
-	ClassicProductionQueue@Support:
-		Type: Support
+	ClassicProductionQueue@Defense:
+		Type: Defense
+		DisplayOrder: 1
 		LowPowerModifier: 300
 		ReadyAudio: ConstructionComplete
 		BlockedAudio: NoBuild
@@ -30,6 +32,7 @@ Player:
 		SpeedUp: True
 	ClassicProductionQueue@Vehicle:
 		Type: Vehicle
+		DisplayOrder: 3
 		LowPowerModifier: 300
 		ReadyAudio: UnitReady
 		BlockedAudio: NoBuild
@@ -41,6 +44,7 @@ Player:
 		BuildTimeSpeedReduction: 100, 75, 60, 50
 	ClassicProductionQueue@Infantry:
 		Type: Infantry
+		DisplayOrder: 2
 		LowPowerModifier: 300
 		ReadyAudio: UnitReady
 		BlockedAudio: NoBuild
@@ -51,6 +55,7 @@ Player:
 		SpeedUp: True
 	ClassicProductionQueue@Ship:
 		Type: Ship
+		DisplayOrder: 5
 		LowPowerModifier: 300
 		ReadyAudio: UnitReady
 		BlockedAudio: NoBuild
@@ -61,6 +66,7 @@ Player:
 		SpeedUp: True
 	ClassicProductionQueue@Aircraft:
 		Type: Aircraft
+		DisplayOrder: 4
 		LowPowerModifier: 300
 		ReadyAudio: UnitReady
 		BlockedAudio: NoBuild
@@ -101,7 +107,7 @@ Player:
 	LobbyPrerequisiteCheckbox@GLOBALFACTUNDEPLOY:
 		ID: factundeploy
 		Label: Redeployable MCVs
-		Description: Allow undeploying Construction Yard.
+		Description: Allow undeploying Construction Yard
 		Enabled: True
 		DisplayOrder: 7
 		Prerequisites: global-factundeploy
@@ -115,7 +121,6 @@ Player:
 	FrozenActorLayer:
 	BaseAttackNotifier:
 	PlayerStatistics:
-	PlaceBeacon:
 	ProvidesTechPrerequisite@infonly:
 		Name: Infantry Only
 		Prerequisites: techlevel.infonly
@@ -138,10 +143,7 @@ Player:
 		Id: unrestricted
 	GrantConditionOnPrerequisiteManager:
 	EnemyWatcher:
-	VeteranProductionIconOverlay:
-		Image: cameo-chevron
-		Sequence: idle
-		Palette: cameo-chevron
+	ResourceStorageWarning:
 	PlayerExperience:
-	ConditionManager:
 	GameSaveViewportManager:
+	PlayerRadarTerrain:
