@@ -72,7 +72,10 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 
 				for (int i = 0; i < palette.Length; i++)
 				{
-					palette[i] = reader.ReadByte();
+					var r = reader.ReadByte();
+					var g = reader.ReadByte();
+					var b = reader.ReadByte();
+					palette[i] = (uint)((r << 24) | (g << 16) | (b << 8) | (i == 0 ? 0x00 : 0xff));
 				}
 
 				frames = ParseFrames(reader);

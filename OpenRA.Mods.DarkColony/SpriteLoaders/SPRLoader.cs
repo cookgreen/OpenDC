@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OpenRA.Graphics;
 using OpenRA.Mods.Common.Graphics;
 using OpenRA.Primitives;
@@ -12,9 +8,6 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 {
 	public class SPRLoader : ISpriteLoader
 	{
-		private uint compressedSize;
-		public ushort FrameNum { get; set; }
-
 		class SPRFrame : ISpriteFrame
 		{
 			public Size Size { get; set; }
@@ -27,62 +20,64 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 
 			public bool DisableExportPadding { get; set; }
 
-			public SpriteFrameType Type
-			{
-				get
-				{
-					return SpriteFrameType.Indexed;
-				}
-			}
+			public SpriteFrameType Type => SpriteFrameType.Indexed;
 		}
 
-		ISpriteFrame[] ParseFrames(BinaryReader reader, int numFrames)
+		private static ISpriteFrame[] ParseFrames(BinaryReader reader, int numFrames, bool isCompressed)
 		{
-			var frames = new List<SPRFrame>();
+			var frames = new SPRFrame[numFrames];
 
-			for (int i = 0; i < numFrames; i++)
+			for (var i = 0; i < numFrames; i++)
 			{
-				ushort width = reader.ReadUInt16();
-				ushort height = reader.ReadUInt16();
-				ushort offsetX = reader.ReadUInt16();
-				ushort offsetY = reader.ReadUInt16();
+				var width = reader.ReadUInt16();
+				var height = reader.ReadUInt16();
+				var offsetX = reader.ReadUInt16();
+				var offsetY = reader.ReadUInt16();
 
-				frames.Add(new SPRFrame
+				frames[i] = new SPRFrame
 				{
 					FrameSize = new Size(width, height),
 					Size = new Size(width, height),
 					Offset = new float2(offsetX, offsetY),
 					Data = new byte[width * height]
-				});
+				};
 			}
 
-			for (int i = 0; i < numFrames; i++)
+			for (var i = 0; i < numFrames; i++)
 			{
-				compressedSize = reader.ReadUInt32();
-				var writeOffset = 0;
-
-				for (int j = 0; j < compressedSize;)
+				if (!isCompressed)
+					frames[i].Data = reader.ReadBytes(frames[i].Size.Width * frames[i].Size.Height);
+				else
 				{
-					var compression = reader.ReadByte();
-					var isEmpty = (compression & 0b10000000) != 0;
-					var numPixels = compression & 0b01111111;
+					var compressedSize = reader.ReadUInt32();
+					var writeOffset = 0;
 
-					if (isEmpty)
-						writeOffset += 0;
-					else
+					for (var readOffset = 0; readOffset < compressedSize; readOffset++)
 					{
-						for (int k = 0; k < numPixels; k++)
-							frames[i].Data[writeOffset++] = reader.ReadByte();
+						var compression = reader.ReadByte();
+						var isEmpty = (compression & 0b10000000) != 0;
+						var numPixels = compression & 0b01111111;
+
+						if (isEmpty)
+							writeOffset += 128 - numPixels;
+						else
+						{
+							numPixels += 1;
+							readOffset += numPixels;
+
+							for (var k = 0; k < numPixels; k++)
+								frames[i].Data[writeOffset++] = reader.ReadByte();
+						}
 					}
 				}
 			}
 
-			return frames.ToArray();
+			return frames;
 		}
 
 		public bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
-			var name = (s as FileStream).Name;
+			var name = ((FileStream)s).Name;
 
 			if (Path.GetExtension(name) != ".SPR")
 			{
@@ -93,13 +88,13 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 
 			var palette = new uint[256];
 
-			using (BinaryReader reader = new BinaryReader(s))
+			using (var reader = new BinaryReader(s))
 			{
 				var flags = reader.ReadUInt16();
 				var numFrames = reader.ReadUInt16();
-				var unkSize = reader.ReadUInt32(); // somewhat related to the data size
+				var unkSize = reader.ReadUInt32(); // TODO could be filesize related
 
-				for (int i = 0; i < palette.Length; i++)
+				for (var i = 0; i < palette.Length; i++)
 				{
 					var r = reader.ReadByte();
 					var g = reader.ReadByte();
@@ -107,7 +102,13 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 					palette[i] = (uint)((r << 24) | (g << 16) | (b << 8) | (i == 0 ? 0x00 : 0xff));
 				}
 
-				frames = ParseFrames(reader, numFrames);
+				var isCompressed = (flags & 0b10000000) != 0;
+				var unknownFlag = (flags & 0b00000001) != 0; // TODO could be transparency related
+
+				if ((flags & 0b01111110) != 0)
+					throw new Exception("Unknown flags!");
+
+				frames = ParseFrames(reader, numFrames, isCompressed);
 			}
 
 			metadata = new TypeDictionary { new EmbeddedSpritePalette(palette) };
