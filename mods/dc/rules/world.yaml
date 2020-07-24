@@ -177,3 +177,5 @@ EditorWorld:
 	EditorSelectionLayer:
 	LoadWidgetAtGameStart:
 	Selection:
+	EditorCursorLayer:
+	EditorActionManager:
