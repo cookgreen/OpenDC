@@ -12,6 +12,7 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 {
 	public class SPRLoader : ISpriteLoader
 	{
+		private ushort compressedSize;
 		public ushort FrameNum { get; set; }
 
 		class SPRFrame : ISpriteFrame
@@ -44,8 +45,8 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 				SPRFrame frame = new SPRFrame();
 				ushort width = reader.ReadUInt16();
 				ushort height = reader.ReadUInt16();
-				ushort unknown1 = reader.ReadUInt16();
-				ushort unknown2 = reader.ReadUInt16();
+				ushort unknown3 = reader.ReadUInt16();
+				ushort unknown4 = reader.ReadUInt16();
 				frame.FrameSize = new Size(width, height);
 				frame.Size = new Size(width, height);
 				frame.Data = new byte[width * height * 4];
@@ -54,9 +55,29 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 
 			for (int i = 0; i < FrameNum; i++)
 			{
-				for (int j = 0; j < frames[i].Data.Length; j++)
+				compressedSize = reader.ReadUInt16();
+				for (int k = 0; k < compressedSize;)
 				{
-					frames[i].Data[j] = reader.ReadByte();
+					byte compression = reader.ReadByte();
+					if (compression < 128)
+					{
+						try
+						{
+							// copy k bytes
+							for (int j = 0; j < compression; j++)
+							{
+								frames[i].Data[j] = reader.ReadByte();
+							}
+						}
+						catch
+						{
+							continue;
+						}
+					}
+					else
+					{
+						k += 256 - compression;
+					}
 				}
 			}
 
@@ -77,22 +98,9 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 
 			using (BinaryReader reader = new BinaryReader(s))
 			{
-				ushort compressedSize = reader.ReadUInt16();
+				compressedSize = reader.ReadUInt16();
 				FrameNum = reader.ReadUInt16();
 				ushort unknown2 = reader.ReadUInt16();
-
-				for (int i = 0; i < compressedSize;)
-				{
-					byte compression = reader.ReadByte();
-					if (compression < 128)
-					{
-						// copy i bytes
-					}
-					else
-					{
-						i += 256 - compression;
-					}
-				}
 
 				for (int i = 0; i < palette.Length; i++)
 				{
