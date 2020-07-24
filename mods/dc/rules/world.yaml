@@ -106,33 +106,33 @@
 			Gems: 50
 			Water: 100
 	Faction@1:
-		Name: England
-		InternalName: england
-		Side: Allies
-		Description: England: Counterintelligence\nSpecial Unit: British Spy\nSpecial Unit: Mobile Gap Generator
+		Name: Human
+		InternalName: human
+		Side: Humans
+		Description: Human: Human Traveller
 	Faction@2:
-		Name: Russia
-		InternalName: russia
+		Name: Gray
+		InternalName: gray
 		Side: Soviet
-		Description: Russia: Tesla Weapons\nSpecial Unit: Tesla Tank\nSpecial Unit: Shock Trooper
+		Description: Gray: Creatures from unknown space
 	Faction@random:
 		Name: Any
 		InternalName: Random
-		RandomFactionMembers: RandomAllies, RandomSoviet
+		RandomFactionMembers: RandomHumans, RandomGrays
 		Side: Random
 		Description: Random Country\nA random country will be chosen when the game starts.
-	Faction@randomallies:
-		Name: Allies
-		InternalName: RandomAllies
-		RandomFactionMembers: england
+	Faction@randomhumans:
+		Name: Humans
+		InternalName: RandomHumans
+		RandomFactionMembers: human
 		Side: Random
-		Description: Random Allied Country\nA random Allied country will be chosen when the game starts.
-	Faction@randomsoviet:
-		Name: Soviet
-		InternalName: RandomSoviet
-		RandomFactionMembers: russia
+		Description: Random Human Country\nA random Human country will be chosen when the game starts.
+	Faction@randomgray:
+		Name: Grays
+		InternalName: RandomGrays
+		RandomFactionMembers: gray
 		Side: Random
-		Description: Random Soviet Country\nA random Soviet country will be chosen when the game starts.
+		Description: Random Gray Country\nA random Gray country will be chosen when the game starts.
 	TerrainRenderer:
 	ResourceType@ore:
 		Type: Ore
