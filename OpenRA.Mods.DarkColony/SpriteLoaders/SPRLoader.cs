@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using OpenRA.Graphics;
-using OpenRA.Mods.Common.Graphics;
 using OpenRA.Primitives;
 
 namespace OpenRA.Mods.DarkColony.SpriteLoaders
@@ -77,16 +76,13 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 
 		public bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
-			var name = ((FileStream)s).Name;
+			metadata = new TypeDictionary();
 
-			if (Path.GetExtension(name) != ".SPR")
+			if (Path.GetExtension(((FileStream)s).Name) != ".SPR")
 			{
 				frames = null;
-				metadata = new TypeDictionary();
 				return false;
 			}
-
-			var palette = new uint[256];
 
 			using (var reader = new BinaryReader(s))
 			{
@@ -94,13 +90,7 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 				var numFrames = reader.ReadUInt16();
 				var unkSize = reader.ReadUInt32(); // TODO could be filesize related
 
-				for (var i = 0; i < palette.Length; i++)
-				{
-					var r = reader.ReadByte();
-					var g = reader.ReadByte();
-					var b = reader.ReadByte();
-					palette[i] = (uint)((r << 24) | (g << 16) | (b << 8) | (i == 0 ? 0x00 : 0xff));
-				}
+				reader.BaseStream.Position += 256 * 3; // We skip the palette here...
 
 				var isCompressed = (flags & 0b10000000) != 0;
 				var unknownFlag = (flags & 0b00000001) != 0; // TODO could be transparency related
@@ -110,8 +100,6 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 
 				frames = ParseFrames(reader, numFrames, isCompressed);
 			}
-
-			metadata = new TypeDictionary { new EmbeddedSpritePalette(palette) };
 
 			return true;
 		}
