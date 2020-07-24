@@ -44,8 +44,9 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 				SPRFrame frame = new SPRFrame();
 				ushort width = reader.ReadUInt16();
 				ushort height = reader.ReadUInt16();
-				var unknown1 = reader.ReadUInt16();
-				var unknown2 = reader.ReadUInt16();
+				ushort unknown1 = reader.ReadUInt16();
+				ushort unknown2 = reader.ReadUInt16();
+				frame.FrameSize = new Size(width, height);
 				frame.Size = new Size(width, height);
 				frame.Data = new byte[width * height];
 				frames.Add(frame);
@@ -63,13 +64,14 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 		}
 
 		public bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
-        {
-            uint[] palette = new uint[256 * 3];
-            using (BinaryReader reader = new BinaryReader(s))
+		{
+			uint[] palette = new uint[256 * 3];
+
+			using (BinaryReader reader = new BinaryReader(s))
 			{
-				ushort unknown = reader.ReadUInt16();
+				ushort unknown1 = reader.ReadUInt16();
 				FrameNum = reader.ReadUInt16();
-				unknown = reader.ReadUInt16();
+				ushort unknown2 = reader.ReadUInt16();
 
 				for (int i = 0; i < palette.Length; i++)
 				{
@@ -79,9 +81,9 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 				frames = ParseFrames(reader);
             }
 
-            metadata = new TypeDictionary { new EmbeddedSpritePalette(palette) };
+			metadata = new TypeDictionary { new EmbeddedSpritePalette(palette) };
 
-            return true;
+			return true;
 		}
 	}
 }
