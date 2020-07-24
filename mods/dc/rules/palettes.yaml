@@ -19,12 +19,6 @@
 		Tileset: DESERT
 		Filename: desert.pal
 		ShadowIndex: 3, 4
-	PaletteFromFile:
-		Name: terrain
-		Tileset: TEMPLATE
-		Filename: template.pal
-		CursorPalette: true
-		ShadowIndex:
 	PaletteFromFile@player:
 		Name: player
 		Filename: temperat.pal
@@ -39,10 +33,19 @@
 		Filename: temperat.pal
 		AllowModifiers: false
 		CursorPalette: true
+	PaletteFromFile@effect:
+		Name: effect
+		Filename: temperat.pal
+		ShadowIndex: 4
 	PaletteFromFile@colorpicker:
 		Name: colorpicker
 		Filename: temperat.pal
+		ShadowIndex: 4
 		AllowModifiers: false
+	PaletteFromFile@desert:
+		Name: desert
+		Filename: desert.pal
+		ShadowIndex: 4
 	ShroudPalette@shroud:
 		Name: shroud
 	ShroudPalette@fog:

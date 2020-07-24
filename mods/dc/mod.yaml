@@ -48,7 +48,6 @@ Rules:
 	dc|rules/palettes.yaml
 	dc|rules/player.yaml
 	dc|rules/world.yaml
-	dc|rules/misc.yaml
     
 Sequences:
 	dc|sequences/misc.yaml
