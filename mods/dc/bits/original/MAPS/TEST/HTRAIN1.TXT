@@ -21,6 +21,6 @@ REMEMBER: ~4The info bar at the bottom of your screen will ~2BEEP ~4whenever the
 
 ~2ORDERS ~4will come in regularly, and they will help you to finish each Training Mission, so look for them.
 
-~2IMPORTANT NOTE: ~4Throughout all the training missions, there is a time limit...All mission objectives must be completed before ~2DUSK.
+~2IMPORTANT NOTE: ~4Throughout all the training missions, there is a time limit... All mission objectives must be completed before ~2DUSK.
 
 ~1...MESSAGE OUT...

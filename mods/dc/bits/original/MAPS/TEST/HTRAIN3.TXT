@@ -17,7 +17,7 @@ Upon successful completion of this last course, you will be recommended for Comm
 
 You will move them to the ~2EXPLOITER ~4North-West of your base and you will ~2DEPLOY ~4the ~2SENTINELS ~4around the ~2EXPLOITER ~4in order to protect it from approaching enemies.
 
-Each ~2SENTINEL ~4has three charges, and there is a 6 second delay before each charge activates, so you might want to double up the in the placing of your ~2SENTINELS.
+Each ~2SENTINEL ~4has three charges, and there is a 6-second delay before each charge activates, so you might want to double up the placement of your ~2SENTINELS.
 
 ~4If any of the drones reach the ~2EXPLOITER, ~4your mission will be a failure.
 

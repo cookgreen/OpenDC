@@ -4,7 +4,7 @@
 
 ~4Our researchers have discovered that the ~2ANCIENT ARTIFACTS ~4you have discovered are weapons of great power. We have named them the ~2SOLARIS ~4and the ~2KAOX.
 
-~4The ~2SOLARIS ~4is star-shaped, and once deployed, harnesses the suns's energy into a single beam of destruction.
+~4The ~2SOLARIS ~4is star-shaped, and once deployed, harnesses the suns' energy into a single beam of destruction.
 
 The ~2KAOX ~4is a ball, that, once deployed, breaks up into random moving blenders of death.
 
@@ -16,7 +16,7 @@ We have also developed a way to detect more of these ~2ARTIFACTS; building a ~2R
 
 ~4Your new mission is to lead our troops in the ~2BENTOK MOUNTAINS, ~4where we have picked up a distress call sent by an ~2AEROGEN ~4base. It seems that ~2AEROGEN ~4will not last much longer against the ~2ALIENS.
 
-~4There are also ~2ARTIFACT SITES ~4in the area, and our sensors indicate that they contain ~2SOLARII ~4only.
+~4There are also ~2ARTIFACT SITES ~4in the area, and our sensors indicate that they contain ~2SOLARIS ~4only.
 
 ~4Good luck, ~2COMMANDER.
 

@@ -1,0 +1,56 @@
+0 norm 1 (c>0)
+vision 2 3 1
+vision 2 4 1
+vision 4 3 1
+vision 3 2 1
+vision 4 2 1
+vision 3 4 1
+exomoney 2 6
+exomoney 3 6
+exomoney 4 6
+reinforce 0 129 126 69 1
+msg 7 0 1 3 6
+end
+
+1 norm 1 ((b(0,0)==0)&&(b(0,1)==0)&&(b(0,2)==0)&&(b(0,3)==0)&&(b(0,4)==0))
+bail 2 2
+msg 7 0 5 3 10
+end
+
+2 norm 1 ((b(2,0)==0)&&(b(2,1)==0)&&(b(2,2)==0)&&(b(2,3)==0)&&(b(2,4)==0)&&(b(3,0)==0)&&(b(3,1)==0)&&(b(3,2)==0)&&(b(3,3)==0)&&(b(3,4)==0)&&(b(4,0)==0)&&(b(4,1)==0)&&(b(4,2)==0)&&(b(4,3)==0)&&(b(4,4)==0))
+bail 0 1
+msg 7 0 4 3 10
+end
+
+3 norm 1 ((s(0,0,69)==1)||(s(0,0,70)==1)||(s(0,0,71)==1)||(s(0,0,72)==1))
+msg 7 0 2 3 6
+setarray 0 (c+240)
+setlifes 4 1
+end
+
+4 norm 0 (c>s(0,2,0))
+reinforce 0 129 126 69 1
+msg 7 0 3 3 6
+end
+
+5 norm 1 (c>450)
+newrate 15 100 134
+newrate 15 31 80
+newrate 15 76 30
+end
+
+6 norm 1 (c>1000)
+newrate 15 131 84
+newrate 15 26 59
+newrate 15 78 37
+end
+
+7 norm 1 (c>1500)
+newrate 15 60 117
+newrate 15 69 37
+newrate 15 150 61
+end
+
+8 norm 1 (c>1800)
+newrate 15 47 100
+end
