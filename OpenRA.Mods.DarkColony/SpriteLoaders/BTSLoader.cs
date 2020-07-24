@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 using OpenRA.Graphics;
 using OpenRA.Mods.Common.Graphics;
 using OpenRA.Primitives;
@@ -12,7 +7,6 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 {
 	public class BTSLoader : ISpriteLoader
 	{
-		public int TilesNum { get; set; }
 		class BTSFrame : ISpriteFrame
 		{
 			public Size Size { get; set; }
@@ -25,38 +19,34 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 
 			public bool DisableExportPadding { get; set; }
 
-			public SpriteFrameType Type
-			{
-				get
-				{
-					return SpriteFrameType.BGRA;
-				}
-			}
+			public SpriteFrameType Type => SpriteFrameType.Indexed;
 		}
 
-		ISpriteFrame[] ParseFrames(BinaryReader reader)
+		static ISpriteFrame[] ParseFrames(BinaryReader reader, int numFrames)
 		{
-			List<BTSFrame> frames = new List<BTSFrame>();
-			for (int i = 0; i < TilesNum; i++)
-			{
-				int id = reader.ReadInt32();
-				BTSFrame frame = new BTSFrame();
-				frame.Size = new Size(32, 32);
-				frame.Data = new byte[32 * 32];
-				for (int j = 0; j < frame.Data.Length; j++)
-				{
-					frame.Data[j] = reader.ReadByte();
-				}
+			var frames = new BTSFrame[numFrames];
 
-				frames.Add(frame);
+			for (var i = 0; i < numFrames; i++)
+			{
+				var id = reader.ReadInt32();
+				var pixels = reader.ReadBytes(32 * 32);
+
+				frames[i] = new BTSFrame
+				{
+					Size = new Size(32, 32),
+					FrameSize = new Size(32, 32),
+					Offset = new float2(0, 0),
+					Data = pixels
+				};
 			}
 
-			return frames.ToArray();
+			return frames;
 		}
 
 		public bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
-			string name = (s as FileStream).Name;
+			var name = ((FileStream)s).Name;
+
 			if (Path.GetExtension(name) != ".BTS")
 			{
 				frames = null;
@@ -64,13 +54,14 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 				return false;
 			}
 
-			uint[] palette = new uint[256 * 3];
-			using (BinaryReader reader = new BinaryReader(s))
-			{
-				int unknown = reader.ReadInt32();
-				TilesNum = reader.ReadInt32();
+			var palette = new uint[256];
 
-				for (int i = 0; i < palette.Length; i++)
+			using (var reader = new BinaryReader(s))
+			{
+				var unkSize = reader.ReadUInt32(); // TODO could be filesize related
+				var numFrames = reader.ReadInt32();
+
+				for (var i = 0; i < palette.Length; i++)
 				{
 					var r = reader.ReadByte();
 					var g = reader.ReadByte();
@@ -78,8 +69,8 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 					palette[i] = (uint)((r << 24) | (g << 16) | (b << 8) | (i == 0 ? 0x00 : 0xff));
 				}
 
-				frames = ParseFrames(reader);
-            }
+				frames = ParseFrames(reader, numFrames);
+			}
 
 			metadata = new TypeDictionary { new EmbeddedSpritePalette(palette) };
 
