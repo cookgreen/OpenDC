@@ -12,7 +12,7 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 {
 	public class SPRLoader : ISpriteLoader
 	{
-		private ushort compressedSize;
+		private uint compressedSize;
 		public ushort FrameNum { get; set; }
 
 		class SPRFrame : ISpriteFrame
@@ -31,52 +31,48 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 			{
 				get
 				{
-					return SpriteFrameType.BGRA;
+					return SpriteFrameType.Indexed;
 				}
 			}
 		}
 
-		ISpriteFrame[] ParseFrames(BinaryReader reader)
+		ISpriteFrame[] ParseFrames(BinaryReader reader, int numFrames)
 		{
-			List<SPRFrame> frames = new List<SPRFrame>();
+			var frames = new List<SPRFrame>();
 
-			for (int i = 0; i < FrameNum; i++)
+			for (int i = 0; i < numFrames; i++)
 			{
-				SPRFrame frame = new SPRFrame();
 				ushort width = reader.ReadUInt16();
 				ushort height = reader.ReadUInt16();
-				ushort unknown3 = reader.ReadUInt16();
-				ushort unknown4 = reader.ReadUInt16();
-				frame.FrameSize = new Size(width, height);
-				frame.Size = new Size(width, height);
-				frame.Data = new byte[width * height * 4];
-				frames.Add(frame);
+				ushort offsetX = reader.ReadUInt16();
+				ushort offsetY = reader.ReadUInt16();
+
+				frames.Add(new SPRFrame
+				{
+					FrameSize = new Size(width, height),
+					Size = new Size(width, height),
+					Offset = new float2(offsetX, offsetY),
+					Data = new byte[width * height]
+				});
 			}
 
-			for (int i = 0; i < FrameNum; i++)
+			for (int i = 0; i < numFrames; i++)
 			{
-				compressedSize = reader.ReadUInt16();
-				for (int k = 0; k < compressedSize;)
+				compressedSize = reader.ReadUInt32();
+				var writeOffset = 0;
+
+				for (int j = 0; j < compressedSize;)
 				{
-					byte compression = reader.ReadByte();
-					if (compression < 128)
-					{
-						try
-						{
-							// copy k bytes
-							for (int j = 0; j < compression; j++)
-							{
-								frames[i].Data[j] = reader.ReadByte();
-							}
-						}
-						catch
-						{
-							continue;
-						}
-					}
+					var compression = reader.ReadByte();
+					var isEmpty = (compression & 0b10000000) != 0;
+					var numPixels = compression & 0b01111111;
+
+					if (isEmpty)
+						writeOffset += 0;
 					else
 					{
-						k += 256 - compression;
+						for (int k = 0; k < numPixels; k++)
+							frames[i].Data[writeOffset++] = reader.ReadByte();
 					}
 				}
 			}
@@ -86,7 +82,8 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 
 		public bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
-			string name = (s as FileStream).Name;
+			var name = (s as FileStream).Name;
+
 			if (Path.GetExtension(name) != ".SPR")
 			{
 				frames = null;
@@ -94,21 +91,24 @@ namespace OpenRA.Mods.DarkColony.SpriteLoaders
 				return false;
 			}
 
-			uint[] palette = new uint[256 * 3];
+			var palette = new uint[256];
 
 			using (BinaryReader reader = new BinaryReader(s))
 			{
-				compressedSize = reader.ReadUInt16();
-				FrameNum = reader.ReadUInt16();
-				ushort unknown2 = reader.ReadUInt16();
+				var flags = reader.ReadUInt16();
+				var numFrames = reader.ReadUInt16();
+				var unkSize = reader.ReadUInt32(); // somewhat related to the data size
 
 				for (int i = 0; i < palette.Length; i++)
 				{
-					palette[i] = reader.ReadByte();
+					var r = reader.ReadByte();
+					var g = reader.ReadByte();
+					var b = reader.ReadByte();
+					palette[i] = (uint)((r << 24) | (g << 16) | (b << 8) | (i == 0 ? 0x00 : 0xff));
 				}
 
-				frames = ParseFrames(reader);
-            }
+				frames = ParseFrames(reader, numFrames);
+			}
 
 			metadata = new TypeDictionary { new EmbeddedSpritePalette(palette) };
 
