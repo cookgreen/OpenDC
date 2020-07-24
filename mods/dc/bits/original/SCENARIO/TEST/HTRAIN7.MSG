@@ -1,0 +1,20 @@
+text 1
+Build A RESEARCH BAY
+
+text 2
+Build 4 MEDI-CRAFTS
+
+text 4
+Use Your EXPLOITER To Mine P-7
+
+text 5
+Follow The Arrows To Your Injured TROOPERS
+
+text 6
+Heal The TROOPERS By Placing The MEDI-CRAFTS Near Them
+
+text 7
+Vent Located...Training Mission Complete
+
+text 8
+Follow The Next Set Of Arrows To The P-7 Vent

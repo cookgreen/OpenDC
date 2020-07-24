@@ -1,0 +1,24 @@
+
+text 1
+Click On The EXPLOITER Icon
+
+text 2
+Press Spacebar To Build It
+
+text 3
+Vents Are Not Always Active
+
+text 4
+Watch For Erupting Vents
+
+text 5
+To Extract P-7, Move Your EXPLOITER Over Any Active Vents
+
+text 6
+Second Vent Has Become Active
+
+text 7
+Mission Complete
+
+text 8
+Move Your Exploiter Over The Second Vent

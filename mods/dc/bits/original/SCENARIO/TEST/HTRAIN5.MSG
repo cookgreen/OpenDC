@@ -1,0 +1,35 @@
+text 1
+Follow The Arrow To MARKER 1
+
+text 2
+MARKER 1 Reached
+
+text 3
+BUILD A BARRAGER
+
+text 4
+UPGRADE Your ROBOT FACTORY 1
+
+text 5
+Use Your EXPLOITER To Mine P-7
+
+text 6
+Reinforcements Are Arriving
+
+text 7
+Move OSPREY IV (Scout) Over MARKER 2
+
+text 8
+Position Your TROOPERS Around The BARRAGER
+
+text 9
+Approaching Enemy AIR DRONES Detected
+
+text 10
+BARRAGER'S Firing Range Increased By The OSPREY IV
+
+text 11
+Good Work.
+
+text 12
+HOLD YOUR POSITION...Dropship Notified

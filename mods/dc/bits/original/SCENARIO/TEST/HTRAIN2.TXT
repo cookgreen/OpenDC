@@ -1,0 +1,22 @@
+~1...INCOMING MESSAGE...
+
+~1AREA 51 MILITARY ACADEMY
+
+~4Congratulations on your successful completion of EXPLOITER 101. You are now ready to move onto the next course.
+
+~3COURSE:    ~7MOVEMENT 133A
+~3TRAINER:   ~7SRGT.P.OSMOND
+~3COURSE DESCRIPTION:
+~7This course will teach you the fundamentals of unit movement.
+
+~1HERE ARE YOUR ORDERS...
+
+~4You will need to build a ~2BARRACKS ~4and train ~23 TROOPERS.
+
+~4Follow the arrows to ~2MARKER 1, ~4but ~2DO NOT ENGAGE THE ENEMY! ~4To do so will mean defeat. Instead, set your ~2TROOPERS ~4to ~2MOVE 'M' ~4mode. This way the troopers will avoid firing at the practice drones.
+
+Once you have reached the marker, await further orders.
+
+~2REMEMBER: ~4If they stop along the way, the ~2TROOPERS ~4will engage the attack drones.
+
+~1...MESSAGE OUT...

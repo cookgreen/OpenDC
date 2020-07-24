@@ -1,0 +1,26 @@
+~1...INCOMING MESSAGE...
+
+~1AREA 51 MILITARY ACADEMY
+
+~4Job well done. You have successfully completed PHASE II of your Commander Training.
+
+Get ready for PHASE III
+
+~3COURSE:    ~7SCOUTS AND TOWERS 808C
+~3TRAINER:   ~7SRGT.D.McNICOL
+~3COURSE DESCRIPTION:
+~7This course will train you in SCOUT usage as well as show you just how deadly FIRESTORMS can be against air units.
+
+~1HERE ARE YOUR ORDERS...
+
+~4Deploy your ~2EXPLOITER ~4in order to mine enough ~2P-7 ~4to upgrade your ~2SCI-POD. ~4Once that has been completed, you must build an ~2OSPREY IV ~4(Scout) and follow the instructions to the markers.
+
+Once you have found the third marker, you will have completed the mission.
+
+At the same time you must ~2DEPLOY ~4your ~2FIRESTORMS ~4in order to fend off any enemy attacks.
+
+If any units are lost, your training mission will be a failure.
+
+~2REMEMBER: ~4To ~2DEPLOY ~4units you must press the ~2ENTER ~4key.
+
+~1MESSAGE OUT...

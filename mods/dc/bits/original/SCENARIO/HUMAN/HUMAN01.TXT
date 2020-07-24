@@ -1,0 +1,24 @@
+~1...DOWNLOADING TRANSMISSION...
+
+~4Welcome to ~2MARS, COMMANDER.
+
+~4We have just received a distress call from one of our ~2MINING COLONIES ~4deep in the ~2CHRYSE BASIN. ~4The message was very broken up, but as we understand it, the ~2COLONY ~4is under attack by those damn ~2ALIENS!
+
+~4There is no time to lose. We are sending you and a small team of ~2TROOPERS ~4to find out what has happened there.
+
+We will be dropping you off at one of our still functional ~2DROPSHIP BEACONS ~4that marks the beginning of the ~2BASIN.
+
+~4There should be a few more ~2DROPSHIP BEACONS. ~4If you are able to reactivate them, we can transport in some reinforcements.
+
+Good Luck, ~2COMMANDER!
+
+~1MISSION OBJECTIVES
+
+~2-Reactivate the DROPSHIP
+ BEACONS
+-Locate and secure the MINING
+ COLONY
+-COMMANDER must not be
+ critically wounded
+
+~1...TRANSMISSION OUT...

@@ -1,0 +1,18 @@
+
+text 1
+BUILD A SCIENCE POD And 8 SENTINELS
+
+text 2
+FOLLOW The ARROWS To The EXPLOITER
+
+text 3
+DEPLOY The SENTINELS Around The EXPLOITER: 'ENTER'
+
+text 4
+Enemy Drones Detected
+
+text 5
+Scanning The Area For Enemies
+
+text 6
+Well Done...The Exploiter Is Safe

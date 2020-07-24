@@ -1,0 +1,45 @@
+
+text 1
+Move ONLY 1 REAPER South, Down To MARKER 5
+
+text 2
+Enemy MINE FIELD Encountered
+
+text 3
+Use WAYPOINTS To Reach MARKER 5
+
+text 4
+Select Your REAPER And Use WAYPOINT MODE 'W'
+
+text 5
+Click Down WAYPOINTS In Order On The MARKERS
+
+text 6
+Click the Last WAYPOINT To Activate The REAPER
+
+text 7
+WAYPOINTS Will Work With All Troop Types
+
+text 8
+Use The EXPLOITER To Mine P-7
+
+text 9
+BUILD A ROBOT FACTORY 1
+
+text 10
+BUILD 2 REAPERS (Mechs)
+
+text 11
+WAYPOINTS Can Also Be Used For PATROLLING
+
+text 12
+UNITS Will Always Follow The Quickest Route
+
+text 13
+Approaching The Final MARKER
+
+text 14
+DON'T LOSE ANY MORE TROOPS!
+
+text 15
+Great Work!

@@ -1,0 +1,24 @@
+
+text 1
+Click On The BROZAAR Icon
+
+text 2
+Press Spacebar To Create It
+
+text 3
+Vents Are Not Always Active
+
+text 4
+Watch For Erupting Vents
+
+text 5
+To Extract P-7, Move Your BROZAAR Over Active Vents
+
+text 6
+Second Vent Has Become Active
+
+text 7
+You Have Done Well
+
+text 8
+Move Your BROZAAR Over Second Active Vent

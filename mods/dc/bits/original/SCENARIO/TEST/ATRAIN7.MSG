@@ -1,0 +1,20 @@
+text 1
+Build A NEURAL HIVE
+
+text 2
+Breed 4 ZISPS (Healers)
+
+text 4
+Use Your BROZAAR To Mine P-7
+
+text 5
+Follow The Arrows To Your WARRIORS
+
+text 6
+Heal Any Injured Troops By Placing The ZISPS Near Them.
+
+text 7
+Training Mission Successful...Be Proud.
+
+text 8
+Follow The Next Set Of Arrows To The P-7 Vent

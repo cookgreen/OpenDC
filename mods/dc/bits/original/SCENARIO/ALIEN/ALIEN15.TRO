@@ -1,0 +1,97 @@
+1 norm 1 ((s(0,0,73)==1)||(s(0,0,74)==1)||(s(0,0,75)==1)||(s(0,0,76)==1))
+msg 2 0 2 3 6
+setarray 0 (c+440)
+setlifes 2 1
+end
+
+2 norm 0 (c>s(0,2,0))
+reinforce 0 70 8 73 1 0 0 0 0 0 0 0 0
+msg 2 0 3 3 6
+end
+
+3 norm 1 ((b(0,0)==0)&&(b(0,1)==0)&&(b(0,2)==0)&&(b(0,3)==0)&&(b(0,4)==0))
+bail 1 2
+msg 2 0 5 3 10
+end
+
+4 norm 1 ((b(1,0)==0)&&(b(1,1)==0)&&(b(1,2)==0)&&(b(1,3)==0)&&(b(1,4)==0)&&(b(2,0)==0)&&(b(2,1)==0)&&(b(2,2)==0)&&(b(2,3)==0)&&(b(2,4)==0)&&(b(4,0)==0)&&(b(4,1)==0)&&(b(4,2)==0)&&(b(4,3)==0)&&(b(4,4)==0))
+bail 0 1
+msg 2 0 4 3 10
+end
+
+5 norm 1 (c>0)
+aimsg 1 2 1 4
+aimsg 1 2 2 4
+aimsg 1 2 3 8
+aimsg 1 2 4 1
+aimsg 2 2 1 4
+aimsg 2 2 2 4
+aimsg 2 2 3 8
+aimsg 2 2 4 1
+aimsg 4 2 1 4
+aimsg 4 2 2 4
+aimsg 4 2 3 8
+aimsg 4 2 4 1
+exomoney 1 30
+exomoney 2 30
+exomoney 4 30
+msg 2 0 8 3 6
+end
+
+6 norm 1 (c>300)
+newrate 20 7 6
+newrate 20 24 64
+newrate 20 91 83
+newrate 20 114 64
+newrate 20 58 98
+end
+
+7 norm 1 (c>700)
+newrate 25 135 25
+newrate 25 91 23
+newrate 15 77 66
+end
+
+8 norm 1 (c>1100)
+newrate 20 44 51
+newrate 20 41 22
+newrate 20 152 8
+newrate 25 141 48
+end
+
+9 norm 1 (c>1500)
+newrate 20 16 51
+newrate 20 71 129
+end
+
+10 norm 1 (c>1900)
+newrate 20 58 79
+end
+
+12 norm 1 (c>3000)
+newrate 20 105 82
+newrate 20 79 134
+end
+
+13 norm 0 (1==1)
+waypoint 39 0 1 94 52
+end
+
+14 norm 1 ((b(1,0)==0)&&(b(1,1)==0)&&(b(1,2)==0)&&(b(1,3)==0)&&(b(1,4)==0)||(b(2,0)==0)&&(b(2,1)==0)&&(b(2,2)==0)&&(b(2,3)==0)&&(b(2,4)==0)||(b(4,0)==0)&&(b(4,1)==0)&&(b(4,2)==0)&&(b(4,3)==0)&&(b(4,4)==0))
+exomoney 1 50
+exomoney 2 50
+exomoney 4 50
+setlifes 15 1
+end
+
+15 norm 0 ((b(1,0)==0)&&(b(1,1)==0)&&(b(1,2)==0)&&(b(1,3)==0)&&(b(1,4)==0)||(b(2,0)==0)&&(b(2,1)==0)&&(b(2,2)==0)&&(b(2,3)==0)&&(b(2,4)==0)||(b(4,0)==0)&&(b(4,1)==0)&&(b(4,2)==0)&&(b(4,3)==0)&&(b(4,4)==0))
+exomoney 1 80
+exomoney 2 80
+exomoney 4 80
+end
+
+18 norm 1 (c>180)
+reinforce2 0 39 0 105 1 0 0 0 0 0 0 0 0
+setlifes 13 1
+msg 2 0 6 3 6
+end

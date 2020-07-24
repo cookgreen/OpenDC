@@ -1,0 +1,45 @@
+
+text 1
+Move ONLY 1 SY DEMON South To MARKER 5
+
+text 2
+Enemy MINE FIELD Encountered
+
+text 3
+Use WAYPOINTS To Reach MARKER 5
+
+text 4
+Select SY DEMON And Use WAYPOINT MODE 'W'
+
+text 5
+Click Down WAYPOINTS In Order On The MARKERS
+
+text 6
+Click The Last WAYPOINT To Activate SY DEMON
+
+text 7
+WAYPOINTS Work With All Troop Types
+
+text 8
+Use The BROZAAR To Mine P-7
+
+text 9
+BUILD A GENETICS SAC
+
+text 10
+Breed 2 SY DEMONS
+
+text 11
+WAYPOINTS Can Also Be Used For PATROLLING
+
+text 12
+UNITS Will Always Follow The Quickest Route
+
+text 13
+Approaching The Final MARKER
+
+text 14
+DON'T LOSE ANY MORE TROOPS!
+
+text 15
+Be Proud

@@ -1,0 +1,33 @@
+
+text 1
+BUILD A BARRACKS And Await DROPSHIP
+
+text 2
+Once The BARRACKS Is Built, Train 3 TROOPERS
+
+text 3
+Select And Set Your TROOPERS To MOVE Mode: 'M'
+
+text 4
+Follow The ARROW To MARKER 1
+
+text 5
+DO NOT STOP Or ENGAGE THE ENEMY
+
+text 6
+Set Your TROOPERS To ATTACK 'A' MODE
+
+text 7
+Escort The EXPLOITER Back To BASE
+
+text 10
+Left Click To Increase # Of Troops To Be Built
+
+text 11
+Right Click To Decrease # Of Troops To Be Built
+
+text 12
+To Do This, CLICK On The TROOPER ICON
+
+text 13
+Congratulations On A Job Well Done.

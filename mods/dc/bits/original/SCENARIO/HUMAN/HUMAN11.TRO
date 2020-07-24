@@ -1,0 +1,62 @@
+1 norm 1 (1==1)
+waypoint 103 129 3 103 129 107 126 113 125
+waypoint 122 129 3 122 129 120 125 115 125
+waypoint 113 40 2 113 40 113 25
+waypoint 112 25 2 112 25 112 40
+setarray 30 0
+setarray 31 0
+end
+
+2 trip 1 (S==0)
+waypoint 103 121 2 109 121 109 116
+waypoint 116 121 2 111 121 111 116
+end
+
+4 trip 1 (S==0)
+waypoint 143 131 2 143 116 143 131
+end
+
+5 trip 1 (S==0)
+waypoint 84 132 2 84 132 84 116
+end
+
+6 trip 1 (S==0)
+waypoint 145 67 2 145 67 133 67
+waypoint 144 66 2 144 66 133 66
+waypoint 145 65 2 145 65 133 65
+waypoint 144 64 2 144 64 133 64
+waypoint 145 63 2 145 63 133 63
+end
+
+7 norm 1 (s(2,0,87)==1)
+waypoint 14 68 2 25 31 14 68
+waypoint 39 68 2 25 31 39 68
+end
+
+9 trip 1 (S==0)
+setlifes 11 0
+setlifes 12 1
+msg 2 0 1 3 6
+end
+
+10 norm 1 ((s(0,0,69)==1)||(s(0,0,70)==1)||(s(0,0,71)==1)||(s(0,0,72)==1))
+bail 1 2
+msg 2 0 5 3 10
+setarray 0 (c+1)
+end
+
+11 norm 1 (s(1,3)==7)
+setlifes 9 0
+setlifes 13 1
+msg 2 0 3 3 6
+end
+
+12 norm 0 (s(1,3)==7)
+bail 0 1
+msg 2 0 4 3 10
+end
+
+13 trip 0 (S==0)
+bail 0 1
+msg 2 0 2 3 10
+end

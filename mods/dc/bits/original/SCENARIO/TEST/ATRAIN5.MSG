@@ -1,0 +1,36 @@
+
+text 1
+Follow The Arrow To MARKER 1
+
+text 2
+MARKER 1 Reached
+
+text 3
+BREED An ATRIL
+
+text 4
+UPGRADE Your GENETICS SAC
+
+text 5
+Use Your BROZAAR To Mine P-7
+
+text 6
+Reinforcements Are Arriving
+
+text 7
+Move ORTU (Scout) Over MARKER 2
+
+text 8
+Defend ATRIL With GRAY Troops
+
+text 9
+Approaching Enemy AIR DRONES Detected
+
+text 10
+ATRIL Firing Range Increased By ORTU
+
+text 11
+Be Proud.
+
+text 12
+HOLD YOUR POSITION...Saucer Link Established

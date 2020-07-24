@@ -1,0 +1,105 @@
+0 norm 1 ((b(0,0)==0)&&(b(0,1)==0)&&(b(0,2)==0)&&(b(0,3)==0)&&(b(0,4)==0))
+bail 1 3
+end
+
+1 trip 1 (S==0)
+setlifes 5 99
+waypoint 22 61 1 74 57
+end
+
+2 norm 1 ((s(0,0,73)==1)||(s(0,0,74)==1)||(s(0,0,75)==1)||(s(0,0,76)==1))
+bail 1 2
+msg 2 0 5 3 10
+end
+
+3 trip 1 (S==0)
+msg 2 0 6 3 3
+msg 2 0 2 3 3
+end
+
+4 norm 1 (c>0)
+exomoney 0 0
+reinforce 0 11 15 73 1 0 0 0 0 0 0 0 0
+msg 2 0 9 3 5
+msg 2 0 11 3 6
+end
+
+5 trip 0 (S==0)
+waypoint 74 57 1 112 48
+end
+
+6 trip 0 (S==0)
+setlifes 5 0
+setlifes 13 1
+waypoint 112 48 2 39 5 33 5
+end
+
+9 norm 1 ((s(6,0,69)==1)||(s(6,0,70)==1)||(s(6,0,71)==1)||(s(6,0,72)==1))
+ai 7 3
+exomoney 0 920
+abduct 0 0
+newrate 33 123 107
+msg 2 0 15 3 6
+msg 2 0 1 3 3
+setarray 0 (c+20)
+setlifes 2 0
+setlifes 19 1
+end
+
+12 trip 0 (S==0)
+reinforce 0 66 3 8 6 10 3 0 0 0 0 0 0
+reinforce 0 63 6 8 5 10 2 0 0 0 0 0 0
+reinforce 5 78 11 0 5 2 3 3 1 0 0 0 0
+msg 2 0 19 3 6
+msg 2 0 7 3 3
+msg 2 0 8 3 3
+msg 2 0 3 3 3
+end
+
+13 trip 0 (S==6)
+setlifes 12 1
+setlifes 14 1
+setlifes 6 0
+reinforce2 2 47 9 45 1
+reinforce2 2 47 8 45 1
+reinforce2 2 47 7 45 1
+reinforce2 2 47 6 45 1
+reinforce2 2 47 5 45 1
+reinforce2 2 47 4 45 1
+reinforce2 2 47 3 45 1
+reinforce2 2 47 2 45 1
+reinforce2 2 47 1 45 1
+reinforce2 2 47 0 45 1
+end
+
+14 trip 0 (S==6)
+ally 0 6 0
+ally 6 0 0
+end
+
+15 trip 1 (S==0)
+msg 2 0 10 3 3
+end
+
+18 norm 0 ((b(7,0)==0)&&(b(7,1)==0)&&(b(7,2)==0)&&(b(7,3)==0)&&(b(7,4)==0))
+bail 0 1
+msg 2 0 18 3 10
+end
+
+19 norm 0 (c>s(0,2,0))
+exomoney 0 3
+setlifes 18 1
+reinforce 0 52 47 73 1 0 0 0 0 0 0
+newrate 36 44 42
+msg 2 0 17 3 6
+msg 2 0 16 3 6
+end
+
+20 trip 1 (S==6)
+setlifes 6 99
+end
+
+25 norm 1 (1)
+nopickup 6
+end
+

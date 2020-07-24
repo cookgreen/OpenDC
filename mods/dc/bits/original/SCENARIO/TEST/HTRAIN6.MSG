@@ -1,0 +1,35 @@
+text 1
+MARKER 1 reached
+
+text 2
+MARKER 2 reached
+
+text 3
+Enemy AIR DRONES Approaching Base
+
+text 4
+Build An OSPREY IV
+
+text 5
+Move Your OSPREY IV WEST To MARKER 1
+
+text 6
+Upgrade Your SCIENCE POD
+
+text 7
+Use Your EXPLOITER To Mine P-7
+
+text 8
+Select And Deploy The FIRESTORMS...Hit ENTER To Deploy
+
+text 9
+Now Move NORTH-WEST To MARKER 2
+
+text 10
+Now Move NORTH-EAST To MARKER 3
+
+text 11
+FIRESTORMS Can Only Fire When They Are DEPLOYED
+
+text 12
+Excellent Job.

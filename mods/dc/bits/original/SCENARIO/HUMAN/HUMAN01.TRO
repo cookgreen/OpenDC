@@ -1,0 +1,65 @@
+
+0 norm 1 (c>1200)
+bail 1 2
+end
+
+1 trip 1 (S==0)
+newtype 54 17 84
+waypoint 63 18 2 53 15 55 19
+waypoint 63 17 2 53 15 55 19
+waypoint 63 16 2 53 15 55 19
+waypoint 64 18 2 53 15 55 19
+waypoint 64 17 2 53 15 55 19
+waypoint 64 16 2 53 15 55 19
+reinforce 0 54 19 0 4 0 0 0 0 0 0 0 0
+msg 2 0 3 3 8
+end
+
+2 trip 1 (S==0)
+waypoint 63 68 1 72 68
+waypoint 63 67 1 72 67
+waypoint 63 66 1 71 66
+waypoint 63 65 1 71 65
+waypoint 72 53 1 76 69
+waypoint 73 53 1 76 69
+waypoint 74 53 1 76 69
+waypoint 75 53 1 76 69
+end
+
+4 norm 0 (s(4,3)>2)
+abduct 0 0
+msg 2 0 2 3 10
+bail 0 1
+end
+
+5 norm 1 ((b(1,0)==0)&&(b(1,1)==0)&&(b(1,2)==0)&&(b(1,3)==0)&&(b(1,4)==0))
+bail 1 4
+msg 2 0 7 3 10
+end
+
+7 trip 1 (S==0)
+newtype 26 59 84
+reinforce 0 29 58 0 4 0 0 0 0 0 0 0 0
+msg 2 0 4 3 10
+setlifes 4 1
+end
+
+8 norm 1 (c>0)
+waypoint 41 12 2 40 14 41 12
+reinforce 0 22 2 0 4 69 1 0 0 0 0 0 0
+exomoney 1 0
+exomoney 0 0
+exomoney 2 0
+exomoney 3 0
+exomoney 4 0
+msg 2 0 1 3 8
+end
+
+9 norm 1 ((s(0,0,69)==1)||(s(0,0,70)==1)||(s(0,0,71)==1)||(s(0,0,72)==1))
+bail 1 3
+msg 2 0 6 3 6
+end
+
+11 trip 1 (S==0)
+msg 2 0 5 3 3
+end

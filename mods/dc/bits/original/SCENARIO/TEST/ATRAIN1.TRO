@@ -1,0 +1,33 @@
+0 norm 1 (c>0)
+exomoney 0 0
+noundeploy
+msg 2 0 2 3 3
+msg 2 0 1 3 3
+end
+
+1 norm 1 (s(0,1)>1659)
+msg 2 0 4 3 3
+msg 2 0 3 3 3
+end
+
+2 norm 1 (s(0,1)>1899)
+newrate 25 38 29
+msg 2 0 6 3 3
+end
+
+3 norm 1 (s(0,1)>2299)
+bail 0 1
+msg 2 0 7 3 10
+end
+
+4 norm 1 (s(0,10)==1)
+bail 1 2
+end
+
+5 norm 1 (s(0,6)>0)
+msg 2 0 5 3 3
+end
+
+7 norm 1 (s(0,1)>1979)
+msg 2 0 8 3 3
+end

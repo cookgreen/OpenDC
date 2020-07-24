@@ -1,0 +1,26 @@
+~1...INCOMING MESSAGE...
+
+~1AREA 51 MILITARY ACADEMY
+
+~4Welcome to the AREA 51 Military Academy. Your application has been reviewed and we are pleased to announce that you've been approved for our final Basic Training Program.
+
+Upon graduation of this class we will be moving our operation to the surface of Mars. 
+
+Thank you for choosing AREA 51 Military Academy.
+
+~3COURSE:    ~7EXPLOITER 101
+~3TRAINER:   ~7SRGT.D.MALONEY
+~3COURSE DESCRIPTION:
+~7This course will teach you basic Petra-7 mining techniques.
+
+~1HERE ARE YOUR ORDERS...
+
+~2BUILD ~4an ~2EXPLOITER ~4unit and find the ~2PETRA-7 ~4vents. ~2DEPLOY ~4the unit over the vent and proceed to extract ~2800 UNITS ~4of ~2P-7.
+
+REMEMBER: ~4The info bar at the bottom of your screen will ~2BEEP ~4whenever there is a new order for you.
+
+~2ORDERS ~4will come in regularly, and they will help you to finish each Training Mission, so look for them.
+
+~2IMPORTANT NOTE: ~4Throughout all the training missions, there is a time limit...All mission objectives must be completed before ~2DUSK.
+
+~1...MESSAGE OUT...

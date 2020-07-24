@@ -1,0 +1,59 @@
+0 norm 1 (c>240)
+newrate 18 149 126
+newrate 18 157 40
+newrate 18 23 44
+end
+
+1 norm 1 (c>900)
+newrate 18 94 75
+newrate 18 68 33
+newrate 18 139 88
+end
+
+2 norm 1 (c>1350)
+newrate 18 82 56
+newrate 18 84 106
+newrate 18 47 104
+end
+
+3 norm 1 (c>1800)
+newrate 18 115 54
+newrate 18 2 33
+newrate 18 12 98
+end
+
+4 norm 1 (c>2250)
+newrate 18 97 12
+newrate 18 9 129
+end
+
+5 norm 1 (c>0)
+reinforce 0 18 6 73 1 8 3 10 2 0 0 0 0 0 0
+msg 2 0 1 3 6
+end
+
+6 norm 1 ((b(2,0)==0)&&(b(2,1)==0)&&(b(2,2)==0)&&(b(2,3)==0)&&(b(2,4)==0)&&(b(7,0)==0)&&(b(7,1)==0)&&(b(7,2)==0)&&(b(7,3)==0)&&(b(7,4)==0))
+bail 0 1
+msg 2 0 7 3 10
+end
+
+7 norm 1 ((b(0,0)==0)&&(b(0,1)==0)&&(b(0,2)==0)&&(b(0,3)==0)&&(b(0,4)==0))
+bail 1 2
+end
+
+8 norm 1 (c>450)
+newrate 18 27 23
+newrate 18 61 65
+newrate 18 135 105
+end
+
+9 norm 1 ((s(0,0,73)==1)||(s(0,0,74)==1)||(s(0,0,75)==1)||(s(0,0,76)==1))
+msg 2 0 4 3 6
+setarray 0 (c+440)
+setlifes 10 1
+end
+
+10 norm 0 (c>s(0,2,0))
+reinforce 0 18 6 73 1 0 0 0 0 0 0 0 0
+msg 2 0 5 3 6
+end

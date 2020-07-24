@@ -1,0 +1,216 @@
+20 norm 0 ((c>s(0,2,0))&&(s(3,0)==1))
+newrate2 122 108 25
+setmoney 122 108 25000
+setlifes 40 1
+end
+
+40 norm 1 ((m(122,108)==0)&&(s(3,0)==1)&&(s(4,0)==1))
+setarray 0 ((c+90)+(r%210))
+setlifes 20 1
+end
+
+21 norm 0 ((c>s(0,2,1))&&(s(3,0)==1))
+newrate2 27 107 25
+setmoney 27 107 25000
+setlifes 41 1
+end
+
+41 norm 1 ((m(27,107)==0)&&(s(3,0)==1)&&(s(4,0)==1))
+setarray 1 ((c+90)+(r%210))
+setlifes 21 1
+end
+
+22 norm 0 ((c>s(0,2,2))&&(s(3,0)==1))
+newrate2 57 103 25
+setmoney 57 103 25000
+setlifes 42 1
+end
+
+42 norm 1 ((m(57,103)==0)&&(s(3,0)==1)&&(s(4,0)==1))
+setarray 2 ((c+90)+(r%210))
+setlifes 22 1
+end
+
+3 norm 1 (s(3,0)==1)
+setarray 3 ((c+90)+(r%210))
+setlifes 23 1
+end
+
+23 norm 0 ((c>s(0,2,3))&&(s(3,0)==1))
+newrate2 82 89 15
+setmoney 82 89 15000
+setlifes 43 1
+end
+
+43 norm 0 ((m(82,89)==0)&&(s(3,0)==1)&&(s(4,0)==1))
+setarray 3 ((c+90)+(r%210))
+setlifes 23 1
+end
+
+24 norm 0 ((c>s(0,2,4))&&(s(3,0)==1))
+newrate2 97 78 25
+setmoney 97 78 25000
+setlifes 44 1
+end
+
+44 norm 1 ((m(97,78)==0)&&(s(3,0)==1)&&(s(4,0)==1))
+setarray 4 ((c+90)+(r%210))
+setlifes 24 1
+end
+
+5 norm 1 (s(3,0)==1)
+setarray 5 ((c+90)+(r%210))
+setlifes 25 1
+end
+
+25 norm 0 ((c>s(0,2,5))&&(s(3,0)==1))
+newrate2 5 71 15
+setmoney 5 71 15000
+setlifes 45 1
+end
+
+45 norm 0 ((m(5,71)==0)&&(s(3,0)==1)&&(s(4,0)==1))
+setarray 5 ((c+90)+(r%210))
+setlifes 25 1
+end
+
+6 norm 1 (s(3,0)==1)
+setarray 6 ((c+90)+(r%210))
+setlifes 26 1
+end
+
+26 norm 0 ((c>s(0,2,6))&&(s(3,0)==1))
+newrate2 34 66 15
+setmoney 34 66 15000
+setlifes 46 1
+end
+
+46 norm 0 ((m(34,66)==0)&&(s(3,0)==1)&&(s(4,0)==1))
+setarray 6 ((c+90)+(r%210))
+setlifes 26 1
+end
+
+27 norm 0 ((c>s(0,2,7))&&(s(3,0)==1))
+newrate2 58 55 25
+setmoney 58 55 25000
+setlifes 47 1
+end
+
+47 norm 1 ((m(58,55)==0)&&(s(3,0)==1)&&(s(4,0)==1))
+setarray 7 ((c+90)+(r%210))
+setlifes 27 1
+end
+
+8 norm 1 (s(3,0)==1)
+setarray 8 ((c+90)+(r%210))
+setlifes 28 1
+end
+
+28 norm 0 ((c>s(0,2,8))&&(s(3,0)==1))
+newrate2 123 54 15
+setmoney 123 54 15000
+setlifes 48 1
+end
+
+48 norm 0 ((m(123,54)==0)&&(s(3,0)==1)&&(s(4,0)==1))
+setarray 8 ((c+90)+(r%210))
+setlifes 28 1
+end
+
+9 norm 1 (s(3,0)==1)
+setarray 9 ((c+90)+(r%210))
+setlifes 29 1
+end
+
+29 norm 0 ((c>s(0,2,9))&&(s(3,0)==1))
+newrate2 96 40 15
+setmoney 96 40 15000
+setlifes 49 1
+end
+
+49 norm 0 ((m(96,40)==0)&&(s(3,0)==1)&&(s(4,0)==1))
+setarray 9 ((c+90)+(r%210))
+setlifes 29 1
+end
+
+10 norm 1 (s(3,0)==1)
+setarray 10 ((c+90)+(r%210))
+setlifes 30 1
+end
+
+30 norm 0 ((c>s(0,2,10))&&(s(3,0)==1))
+newrate2 117 33 15
+setmoney 117 33 15000
+setlifes 50 1
+end
+
+50 norm 0 ((m(117,33)==0)&&(s(3,0)==1)&&(s(4,0)==1))
+setarray 10 ((c+90)+(r%210))
+setlifes 30 1
+end
+
+11 norm 1 (s(3,0)==1)
+setarray 11 ((c+90)+(r%210))
+setlifes 31 1
+end
+
+31 norm 0 ((c>s(0,2,11))&&(s(3,0)==1))
+newrate2 3 32 15
+setmoney 3 32 15000
+setlifes 51 1
+end
+
+51 norm 0 ((m(3,32)==0)&&(s(3,0)==1)&&(s(4,0)==1))
+setarray 11 ((c+90)+(r%210))
+setlifes 31 1
+end
+
+32 norm 0 ((c>s(0,2,12))&&(s(3,0)==1))
+newrate2 76 10 25
+setmoney 76 10 25000
+setlifes 52 1
+end
+
+52 norm 1 ((m(76,10)==0)&&(s(3,0)==1)&&(s(4,0)==1))
+setarray 12 ((c+90)+(r%210))
+setlifes 32 1
+end
+
+13 norm 1 (s(3,0)==1)
+setarray 13 ((c+90)+(r%210))
+setlifes 33 1
+end
+
+33 norm 0 ((c>s(0,2,13))&&(s(3,0)==1))
+newrate2 38 6 15
+setmoney 38 6 15000
+setlifes 53 1
+end
+
+53 norm 0 ((m(38,6)==0)&&(s(3,0)==1)&&(s(4,0)==1))
+setarray 13 ((c+90)+(r%210))
+setlifes 33 1
+end
+
+34 norm 0 ((c>s(0,2,14))&&(s(3,0)==1))
+newrate2 4 4 25
+setmoney 4 4 25000
+setlifes 54 1
+end
+
+54 norm 1 ((m(4,4)==0)&&(s(3,0)==1)&&(s(4,0)==1))
+setarray 14 ((c+90)+(r%210))
+setlifes 34 1
+end
+
+35 norm 0 ((c>s(0,2,15))&&(s(3,0)==1))
+newrate2 122 4 25
+setmoney 122 4 25000
+setlifes 55 1
+end
+
+55 norm 1 ((m(122,4)==0)&&(s(3,0)==1)&&(s(4,0)==1))
+setarray 15 ((c+90)+(r%210))
+setlifes 35 1
+end
+

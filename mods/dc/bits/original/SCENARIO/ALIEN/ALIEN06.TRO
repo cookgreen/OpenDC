@@ -1,0 +1,83 @@
+
+1 norm 1 (c>0)
+waypoint 75 5 1 76 5
+msg 2 0 1 3 3
+end
+
+2 norm 1 (c>3)
+waypoint 44 8 2 88 8 88 3
+waypoint 43 9 2 102 9 107 11
+waypoint 43 7 2 102 9 107 11
+msg 2 0 2 3 3
+end
+
+3 trip 1 (S==1)
+waypoint 55 8 2 101 12 107 10
+waypoint 55 7 2 101 12 107 10
+waypoint 56 9 2 101 12 107 10
+waypoint 56 6 2 101 12 107 10
+end
+
+4 trip 1 (S==1)
+waypoint 64 5 2 110 4 117 4
+waypoint 73 11 2 110 4 117 4
+waypoint 80 1 2 98 0 104 1
+waypoint 69 13 2 110 4 117 4
+waypoint 70 2 2 98 0 104 1
+waypoint 79 7 2 98 0 104 1
+end
+
+5 trip 1 (S==1)
+abduct 1 0
+reinforce 0 78 6 73 1 8 2 0 0 0 0 0 0
+msg 2 0 6 3 3
+msg 2 0 5 3 3
+end
+
+7 norm 1 (c>800)
+newrate 15 29 50
+end
+
+8 norm 1 (c>1100)
+newrate 15 79 47 
+end
+
+9 norm 1 (c>1500)
+newrate 20 17 11
+newrate 15 58 101
+end
+
+11 norm 1 ((b(0,0)==0)&&(b(0,1)==0)&&(b(0,2)==0)&&(b(0,3)==0)&&(b(0,4)==0))
+bail 1 2
+end
+
+12 norm 1 ((b(2,0)==0)&&(b(2,1)==0)&&(b(2,2)==0)&&(b(2,3)==0)&&(b(2,4)==0))
+abduct 0 0
+bail 0 1
+msg 2 0 3 3 10
+end
+
+14 norm 1 (s(0,6)>19)
+ai 2 3
+reinforce 0 17 105 8 3 10 2 11 2 14 1 0 0
+newrate 20 123 70
+newrate 15 78 70
+newrate 20 5 73
+newrate 25 26 108
+msg 2 0 8 3 6
+end
+
+15 norm 1 ((s(0,0,73)==1)||(s(0,0,74)==1)||(s(0,0,75)==1)||(s(0,0,76)==1))
+msg 2 0 7 3 6
+setarray 0 (c+240)
+setlifes 16 1
+end
+
+16 norm 0 (c>s(0,2,0))
+reinforce 0 17 105 73 1 0 0 0 0 0 0 0 0
+msg 2 0 11 3 6
+end
+
+17 norm 1 (s(2,0,6)==1)
+msg 2 0 12 3 6
+end

@@ -1,0 +1,33 @@
+
+text 1
+BUILD a WARRIOR FOLD And Await SAUCER
+
+text 2
+Once the WARRIOR FOLD Is Built, Breed 3 GRAYS
+
+text 3
+Select And Set GRAYS To MOVE Mode: 'M'
+
+text 4
+Follow The ARROW To MARKER 1
+
+text 5
+DO NOT STOP Or ENGAGE THE ENEMY
+
+text 6
+Set UNITS To ATTACK 'A' MODE
+
+text 7
+Escort The BROZAAR To Your BASE
+
+text 10
+Left Click Increases # Of Troops Built
+
+text 11
+Right Click Decreases # Of Troops Built
+
+text 12
+To Do This, CLICK On The GRAY ICON
+
+text 13
+You Should Be Proud

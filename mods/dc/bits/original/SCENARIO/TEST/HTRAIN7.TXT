@@ -1,0 +1,24 @@
+~1...INCOMING MESSAGE...
+
+~1AREA 51 MILITARY ACADEMY
+
+~4Excellent work. This will be your fourth and final phase of Commander Training. As a Certified Graduate of AREA 51 Military Academy, you will be eligible to be one of the first civilians working on Mars.
+
+Good luck and thank you for choosing AREA 51 Military Academy.
+
+~3COURSE:    ~7HEALING 707K
+~3TRAINER:   ~7CMDR.J.McDONALD
+~3COURSE DESCRIPTION:
+~7This course will teach you the importance of keeping your troops healthy using MEDI-CRAFTS (Healers).
+
+~1HERE ARE YOUR ORDERS...
+
+~4Build a ~2RESEARCH BAY ~4and ~24 MEDI-CRAFTS. ~4These units are used to heal troops that have been injured.
+
+After you have built the ~2MEDI-CRAFTS, ~4you must follow the arrows to marker 1, where you will heal your injured ~2TROOPERS.
+
+~4Once healed, follow the next set of arrows to the ~2PETRA-7 ~4vent.
+
+If any of your troops are killed, your mission will be a failure.
+
+~1...MESSAGE OUT...

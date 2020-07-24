@@ -1,0 +1,25 @@
+1 trip 1 (S==0)
+waypoint 53 42 2 53 42 53 21
+waypoint 58 42 2 58 42 58 21
+end
+
+2 trip 1 (S==0)
+waypoint 96 82 2 96 82 96 60
+waypoint 102 82 2 102 82 102 60
+end
+
+3 trip 1 (S==0)
+reinforce2 1 54 50 10 1 0 0 0 0 0 0 0 0
+msg 2 0 2 3 8
+msg 2 0 1 3 8
+bail 0 1
+end
+
+4 trip 1 (S==0)
+waypoint 108 34 2 108 28 108 34
+end
+
+
+18 norm 1 ((s(0,0,73)==1)||(s(0,0,74)==1)||(s(0,0,75)==1)||(s(0,0,76)==1))
+bail 1 2
+end

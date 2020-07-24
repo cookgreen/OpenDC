@@ -1,0 +1,131 @@
+
+2 trip 1 (S==0)
+reinforce 5 21 19 8 6 0 0 0 0 0 0 0 0
+reinforce 5 28 19 8 7 0 0 0 0 0 0 0 0
+end
+
+3 trip 1 (S==0)
+reinforce2 1 40 46 2 2 0 0 0 0 0 0 0 0
+reinforce2 1 44 35 2 2 0 0 0 0 0 0 0 0
+reinforce2 2 54 25 0 1 0 0 0 0 0 0 0 0
+end
+
+4 norm 1 (c>0)
+reinforce 0 7 8 73 1 0 0 0 0 0 0 0 0
+vision 0 5 1
+vision 0 6 1
+vision 0 7 1
+msg 2 0 7 3 6
+end
+
+5 trip 1 (S==0)
+waypoint 25 70 2 4 77 30 52
+waypoint 26 69 2 4 77 30 52
+waypoint 25 71 2 4 77 30 52
+waypoint 26 70 2 4 77 30 52
+waypoint 27 69 2 4 77 30 52
+reinforce 5 15 67 8 6 0 0 0 0 0 0 0 0
+end
+
+7 norm 1 ((s(0,0,73)==1)||(s(0,0,74)==1)||(s(0,0,75)==1)||(s(0,0,76)==1))
+bail 1 2
+msg 2 0 1 3 10
+end
+
+8 trip 1 (S==0)
+reinforce 6 48 30 8 4 0 0 0 0 0 0 0 0
+reinforce 6 55 24 8 2 0 0 0 0 0 0 0 0
+end
+
+9 trip 1 (S==0)
+reinforce2 2 59 32 2 2 0 0 0 0 0 0 0 0
+reinforce2 2 74 26 2 2 0 0 0 0 0 0 0 0
+reinforce2 2 81 26 2 2 0 0 0 0 0 0 0 0
+reinforce2 2 81 17 2 2 0 0 0 0 0 0 0 0
+end
+
+10 trip 1 (S==0)
+reinforce 5 64 36 8 3 0 0 0 0 0 0 0 0
+reinforce 5 73 27 8 3 0 0 0 0 0 0 0 0
+end
+
+11 trip 1 (S==0)
+reinforce2 3 99 41 2 6 0 0 0 0 0 0 0 0
+reinforce2 3 97 44 3 2 0 0 0 0 0 0 0 0
+setlifes 12 1
+end
+
+12 trip 0 (S==0)
+reinforce 5 99 35 8 6 0 0 0 0 0 0 0 0
+reinforce 5 98 42 8 4 0 0 0 0 0 0 0 0
+reinforce 5 95 31 8 5 0 0 0 0 0 0 0 0
+end
+
+13 trip 1 (S==0)
+waypoint 85 82 2 90 51 71 83
+waypoint 86 82 2 90 51 71 83
+waypoint 86 83 2 90 51 71 83
+waypoint 85 83 2 90 51 71 83
+reinforce2 2 90 69 3 1 0 0 0 0 0 0 0 0
+reinforce2 2 68 85 3 2 0 0 0 0 0 0 0 0
+end
+
+14 trip 1 (S==0)
+reinforce 6 81 77 8 5 0 0 0 0 0 0 0 0
+reinforce 6 87 67 8 5 0 0 0 0 0 0 0 0
+end
+
+15 trip 1 (S==0)
+reinforce2 2 62 49 2 2 0 0 0 0 0 0 0 0
+end
+
+16 trip 1 (S==0)
+reinforce 5 64 47 8 6 0 0 0 0 0 0 0 0
+end
+
+17 trip 1 (S==0)
+reinforce2 7 85 44 72 1 0 0 0 0 0 0 0 0
+setlifes 18 1
+end
+
+18 trip 0 (S==0)
+abduct 7 0
+abduct 0 0
+msg 2 0 3 3 6
+msg 2 0 2 3 3
+setarray 1 (c+10)
+setlifes 19 1
+end
+
+19 norm 0 (c>s(0,2,1))
+bail 0 1
+msg 2 0 6 3 10
+end
+
+20 trip 1 (S==0)
+reinforce2 3 50 62 0 4 2 2 0 0 0 0 0 0
+reinforce2 3 61 60 0 4 2 2 0 0 0 0 0 0
+end
+
+21 trip 1 (S==0)
+reinforce 5 52 63 8 4 0 0 0 0 0 0 0 0
+reinforce 5 61 60 8 4 0 0 0 0 0 0 0 0
+reinforce 5 59 57 8 3 0 0 0 0 0 0 0 0
+end
+
+22 trip 1 (S==0)
+reinforce 5 56 55 8 4 0 0 0 0 0 0 0 0
+end
+
+24 trip 1 (S==0)
+reinforce2 2 45 87 0 1 0 0 0 0 0 0 0 0
+reinforce2 2 39 81 0 1 0 0 0 0 0 0 0 0
+end
+
+25 trip 1 (S==0)
+reinforce 5 24 42 8 4 0 0 0 0 0 0 0 0
+end
+
+26 trip 1 (S==0)
+reinforce 5 55 68 8 8 0 0 0 0 0 0 0 0
+end

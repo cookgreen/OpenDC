@@ -1,0 +1,20 @@
+~1...INCOMING MESSAGE...
+
+~1AREA 51 MILITARY ACADEMY
+
+~4Upon review of your recent performance here at the Academy, you have been accepted into our FOUR PHASE Commander Training Program.
+
+Upon completion of the program, you will be a fully certified Commander.
+
+Congratulations, and Good Luck!
+
+~3COURSE:    ~7WAYPOINTS 506G
+~3TRAINER:   ~7CMDR.B.DOBBS
+~3COURSE DESCRIPTION:
+~7This course will teach you the WAYPOINT SYSTEM for guiding your troops.
+
+~1HERE ARE YOUR ORDERS...
+
+~4Use your ~2EXPLOITER ~4to mine enough ~2P-7 ~4to allow you to build a ~2ROBOT FACTORY, ~4and ~22 REAPERS ~4(Mechs). Once this has been completed, you must await further orders.
+
+~1...MESSAGE OUT...

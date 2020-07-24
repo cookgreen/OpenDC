@@ -1,0 +1,22 @@
+~1...INCOMING MESSAGE...
+
+~1AREA 51 MILITARY ACADEMY
+
+~4You have successfully completed PHASE 1 of the Commander Training Program.
+
+Now we move on to PHASE II.
+
+~3COURSE:    ~7ARTILLERY 533A
+~3TRAINER:   ~7CMDR.J.KAGAMI
+~3COURSE DESCRIPTION:
+~7This course will show you the power of Artillery units.
+
+~1HERE ARE YOUR ORDERS...
+
+~4Use your ~2EXPLOITER ~4to mine enough ~2P-7 ~4to allow you to ~2UPGRADE ~4your ~2ROBOT FACTORY. ~4This will allow you to build a ~2BARRAGER, ~4which is the name of our artillery unit.
+
+Once this has been completed, you must await further orders.
+ 
+~2REMEMBER: ~4Mining enough ~2P-7 ~4to build what you need can sometimes take time.
+
+~1MESSAGE OUT...

@@ -1,0 +1,26 @@
+~1...INCOMING MESSAGE...
+
+~1AREA 51 MILITARY ACADEMY
+
+~4Good work. You've made it to your final course of the Basic Training Program.
+
+Upon successful completion of this last course, you will be recommended for Commander Training.
+
+~3COURSE:    ~7MINE LAYING 203C
+~3TRAINER:   ~7CMDR.D.WENDORF
+~3COURSE DESCRIPTION:
+~7This course will teach you defensive skills using LAND MINE Units.
+
+~1HERE ARE YOUR ORDERS...
+
+~4Build a ~2SCIENCE-POD. ~4This will allow you to create land mines, which we call ~2SENTINELS, ~4that you will be able to ~2DEPLOY ~4into the ground.
+
+You will move them to the ~2EXPLOITER ~4North-West of your base and you will ~2DEPLOY ~4the ~2SENTINELS ~4around the ~2EXPLOITER ~4in order to protect it from approaching enemies.
+
+Each ~2SENTINEL ~4has three charges, and there is a 6 second delay before each charge activates, so you might want to double up the in the placing of your ~2SENTINELS.
+
+~4If any of the drones reach the ~2EXPLOITER, ~4your mission will be a failure.
+
+~2REMEMBER: ~4Pressing the ~2ENTER ~4key will ~2DEPLOY ~4your ~2SENTINELS.
+
+~1...MESSAGE OUT...

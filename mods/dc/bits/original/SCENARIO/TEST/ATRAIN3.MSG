@@ -1,0 +1,18 @@
+
+text 1
+BUILD A BREEDER POD And Breed 8 SLOMS
+
+text 2
+FOLLOW The ARROWS To The BROZAAR
+
+text 3
+DEPLOY The SLOMS Around The BROZAAR
+
+text 4
+Enemy Drones Detected
+
+text 5
+Scanning The Area For Enemies
+
+text 6
+You Have Destroyed All The Drones

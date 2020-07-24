@@ -1,0 +1,32 @@
+0 norm 1 (c>90)
+msg 2 0 4 3 3
+ai 1 3
+end
+
+1 trip 1 (S==1)
+bail 1 2
+end
+
+2 norm 1 (s(0,2)>7)
+bail 0 1
+msg 2 0 6 3 10
+end
+
+3 norm 1 (c>0)
+exomoney 0 0
+noundeploy
+msg 2 0 1 3 3
+end
+
+4 norm 1 (s(0,6)>4)
+msg 2 0 3 3 3
+msg 2 0 2 3 3
+end
+
+5 norm 1 (s(0,10)==1)
+bail 1 3
+end
+
+6 norm 1 (c>80)
+msg 2 0 5 3 10
+end

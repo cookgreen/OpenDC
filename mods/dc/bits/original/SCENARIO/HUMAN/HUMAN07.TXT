@@ -1,0 +1,28 @@
+~1...DOWNLOADING TRANSMISSION...
+
+~4That was great work down there ~2COMMANDER.
+
+~4Our researchers have discovered that the ~2ANCIENT ARTIFACTS ~4you have discovered are weapons of great power. We have named them the ~2SOLARIS ~4and the ~2KAOX.
+
+~4The ~2SOLARIS ~4is star-shaped, and once deployed, harnesses the suns's energy into a single beam of destruction.
+
+The ~2KAOX ~4is a ball, that, once deployed, breaks up into random moving blenders of death.
+
+We have also developed a way to detect more of these ~2ARTIFACTS; building a ~2RESEARCH CENTER ~4will give you the ability to 'spot' these ~2ARTIFACT SITES; ~4they are mainly located near ~2ANCIENT RUINS.
+
+~4Once you have detected the ~2SITES, ~4use your ~2EXPLOITER ~4to excavate the ~2ARTIFACTS.
+
+~4These new weapons, ~2COMMANDER, ~4could be just the thing we need to rid ~2MARS ~4of the ~2ALIENS.
+
+~4Your new mission is to lead our troops in the ~2BENTOK MOUNTAINS, ~4where we have picked up a distress call sent by an ~2AEROGEN ~4base. It seems that ~2AEROGEN ~4will not last much longer against the ~2ALIENS.
+
+~4There are also ~2ARTIFACT SITES ~4in the area, and our sensors indicate that they contain ~2SOLARII ~4only.
+
+~4Good luck, ~2COMMANDER.
+
+~1MISSION OBJECTIVES
+
+~2-Aid AEROGEN in their fight
+-Destroy the ALIEN HIVES
+
+~1...TRANSMISSION OUT...

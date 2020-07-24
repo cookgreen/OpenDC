@@ -1,0 +1,76 @@
+
+0 norm 1 (c>0)
+reinforce 0 84 8 0 2 2 1 0 0 0 0 0 0
+msg 7 0 3 2 6
+msg 2 0 2 3 3
+end
+
+1 norm 1 ((b(2,0)==0)&&(b(2,1)==0)&&(b(2,2)==0)&&(b(2,3)==0)&&(b(2,4)==0))
+bail 0 1
+msg 2 0 1 3 10
+end
+
+2 norm 1 ((b(0,0)==0)&&(b(0,1)==0)&&(b(0,2)==0)&&(b(0,3)==0)&&(b(0,4)==0))
+bail 1 2
+end
+
+3 norm 1 (c>200)
+newrate 15 53 15
+newrate 15 22 62
+newrate 15 2 26
+end
+
+4 norm 1 (c>400)
+newrate 15 82 39
+newrate 15 47 71
+end
+
+5 norm 1 (c>600)
+newrate 15 68 50
+newrate 15 11 38
+end
+
+6 norm 1 (c>750)
+newrate 15 51 43
+end
+
+7 norm 1 (c>820)
+newrate 15 55 46
+end
+
+8 norm 1 (c>900)
+newrate 15 54 38
+newrate 15 46 43
+end
+
+9 norm 1 (c>850)
+reinforce 2 23 88 13 4 0 0 0 0 0 0 0 0
+end
+
+10 norm 1 (c>1500)
+reinforce 2 23 88 8 5 10 8 0 0 0 0 0 0
+end
+
+11 norm 1 ((b(7,0)==0)&&(b(7,1)==0)&&(b(7,2)==0)&&(b(7,3)==0)&&(b(7,4)==0))
+bail 1 3
+end
+
+12 norm 1 (c>30)
+msg 7 0 4 2 8
+msg 2 0 2 3 3
+end
+
+13 norm 1 ((s(0,0,69)==1)||(s(0,0,70)==1)||(s(0,0,71)==1)||(s(0,0,72)==1))
+msg 2 0 5 3 6
+setarray 0 (c+120)
+setlifes 14 1
+end
+
+14 norm 0 (c>s(0,2,0))
+reinforce 0 84 8 69 1 0 0 0 0 0 0 0 0
+msg 2 0 6 3 6
+end
+
+20 trip 1 (S==0)
+reinforce 7 9 93 0 5 2 2 0 0 0 0 0 0
+end

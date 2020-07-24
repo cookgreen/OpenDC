@@ -1,0 +1,42 @@
+~0TRANSMISSION DETECTED...
+
+~0CONFIRMING CO-ORDINATES
+
+~0DOWN LOADING TRANSMISSION....
+
+ ~1In a few momments you will be
+ landing on Mars.Here are your
+ orders soldier...
+
+ ~1We have recently discovered
+ several vacant Petra-7 vents
+ located in the Cydonia Region.
+ ~1It is imperative to ~0Pan Luma 
+ Industries~1 that you
+ ~7secure the area and begin
+ Petra-7 mining immediatly.
+
+ ~1Construction has already began on
+ a new base. Which should be
+ operational by the time you reach 
+ the Cydonia Region.
+
+ ~1We must warn you there has been
+ a considerable amount of hostile
+ alien contact in the area.
+
+ This has lead us to belive that 
+ there is an alien Hive located 
+ somewhere in the vacinity.
+ 
+ We are counting on you and your 
+ crew to ~7Find the alien Hive and
+ destroy it
+
+ There are to be no survivors. 
+
+ ~1Welcome to the ~0DARK COLONY
+ ~1soldier...and good luck. 
+
+
+~0MESSAGE OUT...
