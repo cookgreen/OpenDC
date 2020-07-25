@@ -30,10 +30,18 @@ Packages:
 	~desert.mix
 	dc|bits
 	dc|bits/desert
-	dc|bits/original/MISSION
-	dc|bits/original/SCENARIO
-	dc|bits/original/SOUND
+	dc|bits/original/MAPS
+	dc|bits/original/MAPS/AEROGEN
+	dc|bits/original/MAPS/ALIEN
+	dc|bits/original/MAPS/COUNCIL
+	dc|bits/original/MAPS/DEMO
+	dc|bits/original/MAPS/HUMAN
+	dc|bits/original/MAPS/MPLAYER
+	dc|bits/original/MAPS/TEST
+	dc|bits/original/MUSIC
+	dc|bits/original/SOUNDS
 	dc|bits/original/SPRITES
+	dc|bits/original/TILESETS
 	dc|uibits
 
 MapFolders:
