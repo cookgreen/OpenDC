@@ -120,6 +120,9 @@ ChromeLayout:
 Notifications:
 	dc|audio/notifications.yaml
 
+Music:
+	dc|audio/music.yaml
+
 Translations:
 	dc|english.yaml
 
