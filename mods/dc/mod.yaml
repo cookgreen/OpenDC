@@ -54,6 +54,8 @@ Rules:
 	dc|rules/world.yaml
     
 Sequences:
+	dc|sequences/units.yaml
+	dc|sequences/ui.yaml
 	dc|sequences/misc.yaml
 
 TileSets:

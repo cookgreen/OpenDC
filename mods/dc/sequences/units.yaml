@@ -1,0 +1,77 @@
+AIRD: 
+	stand: 
+		Facings: 8
+        
+ALBU1: ALBU.SPR
+	stand:
+		Length: 2
+        
+ALBU2: ALBU.SPR
+	stand:
+		Start: 2
+		Length: 2
+        
+ALBU3: ALBU.SPR
+	stand:
+		Start: 4
+		Length: 2
+        
+ALBU4: ALBU.SPR
+	stand:
+		Start: 6
+		Length: 2
+        
+ALBU5: ALBU.SPR
+	stand:
+		Start: 8
+		Length: 2
+        
+ALBU6: ALBU.SPR
+	stand:
+		Start: 10
+		Length: 2
+        
+ALBU7: ALBU.SPR
+	stand:
+		Start: 12
+		Length: 2
+        
+ALBU8: ALBU.SPR
+	stand:
+		Start: 14
+		Length: 2
+        
+ALBU9: ALBU.SPR
+	stand:
+		Start: 16
+		Length: 2
+        
+ALBU10: ALBU.SPR
+	stand:
+		Start: 18
+		Length: 2
+        
+ALBU11: ALBU.SPR
+	stand:
+		Start: 20
+		Length: 2
+        
+ALBU12: ALBU.SPR
+	stand:
+		Start: 22
+		Length: 2
+        
+ALBU13: ALBU.SPR
+	stand:
+		Start: 24
+		Length: 2
+        
+ALBU14: ALBU.SPR
+	stand:
+		Start: 26
+		Length: 2
+        
+ALBU15: ALBU.SPR
+	stand:
+		Start: 28
+		Length: 2

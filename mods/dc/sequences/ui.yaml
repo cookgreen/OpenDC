@@ -1,0 +1,7 @@
+ui:
+	gary-campaign-preview: ACAR.SPR
+		Start: 1
+		Length: 25
+	gray-commander-preview: ACOM.SPR
+		Start: 1
+		Length: 7
