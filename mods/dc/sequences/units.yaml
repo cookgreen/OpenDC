@@ -1,77 +1,141 @@
 AIRD: 
+	Defaults:
+		UseTilesetCode: false
+		UseTilesetSuffix: false
+		AddExtension: false
 	stand: 
 		Facings: 8
         
-ALBU1: ALBU.SPR
-	stand:
+ALBU1: 
+	Defaults:
+		UseTilesetCode: false
+		UseTilesetSuffix: false
+		AddExtension: false
+	stand: ALBU.SPR
 		Length: 2
         
-ALBU2: ALBU.SPR
-	stand:
+ALBU2: 
+	Defaults:
+		UseTilesetCode: false
+		UseTilesetSuffix: false
+		AddExtension: false
+	stand: ALBU.SPR
 		Start: 2
 		Length: 2
         
-ALBU3: ALBU.SPR
-	stand:
+ALBU3: 
+	Defaults:
+		UseTilesetCode: false
+		UseTilesetSuffix: false
+		AddExtension: false
+	stand: ALBU.SPR
 		Start: 4
 		Length: 2
         
-ALBU4: ALBU.SPR
-	stand:
+ALBU4: 
+	Defaults:
+		UseTilesetCode: false
+		UseTilesetSuffix: false
+		AddExtension: false
+	stand: ALBU.SPR
 		Start: 6
 		Length: 2
         
-ALBU5: ALBU.SPR
-	stand:
+ALBU5: 
+	Defaults:
+		UseTilesetCode: false
+		UseTilesetSuffix: false
+		AddExtension: false
+	stand: ALBU.SPR
 		Start: 8
 		Length: 2
         
-ALBU6: ALBU.SPR
-	stand:
+ALBU6: 
+	Defaults:
+		UseTilesetCode: false
+		UseTilesetSuffix: false
+		AddExtension: false
+	stand: ALBU.SPR
 		Start: 10
 		Length: 2
         
-ALBU7: ALBU.SPR
-	stand:
+ALBU7: 
+	Defaults:
+		UseTilesetCode: false
+		UseTilesetSuffix: false
+		AddExtension: false
+	stand: ALBU.SPR
 		Start: 12
 		Length: 2
         
-ALBU8: ALBU.SPR
-	stand:
+ALBU8: 
+	Defaults:
+		UseTilesetCode: false
+		UseTilesetSuffix: false
+		AddExtension: false
+	stand: ALBU.SPR
 		Start: 14
 		Length: 2
         
-ALBU9: ALBU.SPR
-	stand:
+ALBU9: 
+	Defaults:
+		UseTilesetCode: false
+		UseTilesetSuffix: false
+		AddExtension: false
+	stand: ALBU.SPR
 		Start: 16
 		Length: 2
         
-ALBU10: ALBU.SPR
-	stand:
+ALBU10: 
+	Defaults:
+		UseTilesetCode: false
+		UseTilesetSuffix: false
+		AddExtension: false
+	stand: ALBU.SPR
 		Start: 18
 		Length: 2
         
-ALBU11: ALBU.SPR
-	stand:
+ALBU11: 
+	Defaults:
+		UseTilesetCode: false
+		UseTilesetSuffix: false
+		AddExtension: false
+	stand: ALBU.SPR
 		Start: 20
 		Length: 2
         
-ALBU12: ALBU.SPR
-	stand:
+ALBU12: 
+	Defaults:
+		UseTilesetCode: false
+		UseTilesetSuffix: false
+		AddExtension: false
+	stand: ALBU.SPR
 		Start: 22
 		Length: 2
         
-ALBU13: ALBU.SPR
-	stand:
+ALBU13: 
+	Defaults:
+		UseTilesetCode: false
+		UseTilesetSuffix: false
+		AddExtension: false
+	stand: ALBU.SPR
 		Start: 24
 		Length: 2
         
-ALBU14: ALBU.SPR
-	stand:
+ALBU14: 
+	Defaults:
+		UseTilesetCode: false
+		UseTilesetSuffix: false
+		AddExtension: false
+	stand: ALBU.SPR
 		Start: 26
 		Length: 2
         
-ALBU15: ALBU.SPR
-	stand:
+ALBU15: 
+	Defaults:
+		UseTilesetCode: false
+		UseTilesetSuffix: false
+		AddExtension: false
+	stand: ALBU.SPR
 		Start: 28
 		Length: 2
