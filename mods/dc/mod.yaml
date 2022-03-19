@@ -5,13 +5,14 @@ Metadata:
 PackageFormats: Mix
 
 Packages:
+	^EngineDir
 	~^Content/ra/v2/
 	~^Content/ra/v2/expand
 	~^Content/ra/v2/cnc
 	~^Content/ra/v2/movies
 	.
 	$dc: dc
-	./mods/common: common
+	^EngineDir|mods/common: common
 	~main.mix
 	~conquer.mix
 	~lores.mix: lores
@@ -70,8 +71,8 @@ Chrome:
 	dc|chrome.yaml
 
 Assemblies:
-	common|OpenRA.Mods.Common.dll
-	common|OpenRA.Mods.Cnc.dll
+	^BinDir|OpenRA.Mods.Common.dll
+	^BinDir|OpenRA.Mods.Cnc.dll
 	dc|OpenRA.Mods.DarkColony.dll
 
 ChromeLayout:
