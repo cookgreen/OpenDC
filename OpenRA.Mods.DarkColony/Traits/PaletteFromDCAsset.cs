@@ -7,7 +7,7 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.DarkColony.Traits
 {
-	class PaletteFromDCAssetInfo : ITraitInfo, IProvidesCursorPaletteInfo
+	class PaletteFromDCAssetInfo : TraitInfo, IProvidesCursorPaletteInfo
 	{
 		[FieldLoader.Require]
 		[PaletteDefinition]
@@ -20,7 +20,7 @@ namespace OpenRA.Mods.DarkColony.Traits
 
 		public readonly bool AllowModifiers = true;
 
-		public object Create(ActorInitializer init) { return new PaletteFromDCAsset(init.World, this); }
+		public override object Create(ActorInitializer init) { return new PaletteFromDCAsset(init.World, this); }
 
 		string IProvidesCursorPaletteInfo.Palette => Name;
 
