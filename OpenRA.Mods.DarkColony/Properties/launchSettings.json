@@ -3,7 +3,7 @@
     "OpenRA Dark Colony": {
       "commandName": "Executable",
       "executablePath": "..\\..\\engine\\bin\\OpenRA.exe",
-      "commandLineArgs": "Engine.LaunchPath=..\\..\\engine \"Engine.ModSearchPaths=..\\..\\mods,..\\..\\engine\\mods\" Game.Mod=dc"
+      "commandLineArgs": "Engine.LaunchPath=..\\..\\engine \"Engine.ModSearchPaths=..\\..\\mods,..\\..\\engine\\mods\" Game.Mod=dc Engine.EngineDir=\"..\""
     }
   }
 }
